@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>task 2</title>
+    <link href="css\login.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function func(){
+        var _nm = document.getElementById("received_nm").value;
+        var _tel = document.getElementById("received_tel").value;
+        var _email = document.getElementById("received_email").value;
+
+        if(!_nm||!_tel|| !_email){
+          alert("작성되지 않은 란이 있습니다.");
+        }
+        else{
+          alert(_nm+"님의 id는 이것입니다.");
+        }
+
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="wrap-login ">
+          <div class="text-center form1">
+                <h1 >FIND_ID</h1>
+                <form class="form-group">
+                  <div class="form-group">
+                    <input class="form-control " type="text" name="" value="" id="received_nm"placeholder="NAME" required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control " type="tel" name="" value="" id="received_tel"placeholder="TEL"required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control " type="email" name="" value="" id="received_email"placeholder="EMAIL"required>
+                  </div>
+
+                  <div class="find_text flex-sb-m">
+                    <p></p>
+                    <div>
+                      <p>Return <a href="login.html" >Login Page</a> </p>
+                    </div>
+                  </div>
+                  <div class="log-btn">
+                      <button  class=" btn log-btn" value="Login" onclick="func();"  > Find</button>
+                  </div>
+                </form>
+
+
+          </div>
+
+
+      </div>
+    </div>
+
+  </body>
+</html>

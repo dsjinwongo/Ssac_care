@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>task 2</title>
+    <link href="css\login.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function func(){
+        var _nm = document.getElementById("received_nm").value;
+        var _id = document.getElementById("received_id").value;
+        var _tel = document.getElementById("received_tel").value;
+        var _email = document.getElementById("received_email").value;
+
+        if(!_nm||!_id||!_tel|| !_email){
+          alert("작성되지 않은 란이 있습니다.");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <body class="login">
+
+      <div class="container">
+        <div class="wrap-login ">
+            <div class="text-center form1"style="margin-Top:165px">
+                <h1 >FIND_PW</h1>
+                <form class="form" >
+                  <div class="form-group">
+                    <input class="form-control" type="text"id="received_nm"placeholder="NAME"required><br>
+                    <input class="form-control" type="text"  id="received_id"placeholder="ID" required><br>
+                    <input class="form-control" type="tel"  id="received_tel"placeholder="TEL" required><br>
+                    <input class="form-control" type="email"  id="received_email"placeholder="EMAIL" required>
+                    <br>
+                  </div>
+                  <div class="find_text flex-sb-m form-group">
+                    <p></p>
+                    <div>
+                      <p>Return <a href="login.html" >Login Page</a> </p>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn log-btn" value="Login" onclick="func();">
+                  </div>
+                </form>
+            </div>
+
+
+        </div>
+      </div>
+
+
+  </body>
+</html>

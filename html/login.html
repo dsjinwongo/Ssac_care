@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>task 2</title>
+  <link href="css\login.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function func(){
+        var _id = document.getElementById("received_id").value;
+        var _pw = document.getElementById("received_pw").value;
+        if(!_id||!_pw){
+          alert("작성되지 않은 란이 있습니다.");
+        }
+        else{
+          alert(_id+"님 로그인 되었습니다.");
+          location.href = "login.html";
+        }
+
+
+      }
+    </script>
+  </head>
+
+  <body style="backgroud-color: #f4f4f4" >
+
+    <div class="container" >
+      <div class="wrap-login ">
+          <div class="text-center form1" >
+                <h1 >Login</h1>
+                <form class="form-group">
+                  <div class="form-group">
+                    <input class="form-control " type="text" name="" value="" id="received_id"placeholder="ID" required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control " type="password" name="" value="" id="received_pw"placeholder="PW" required>
+                  </div>
+                  <div class="find_text flex-sb-m">
+                    <div class="rem-check ">
+                      <input type="checkbox" name="Remember me" value="" id="chb1">
+                      <label for="chb1">Remember ID</label>
+                    </div>
+                    <div>
+                      <p>Forgot <a href="find_id.html" >ID</a> / <a href="find_pw.html" >Password	</a>
+                         <br><a class="pull-right" href="signup.html" >Sign up</a></p>
+                    </div>
+                  </div>
+                  <div class="log-btn">
+                      <button type='submit' class=" btn log-btn" value="Login" onclick="func();"  > login</button>
+                  </div>
+                </form>
+
+          </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+  <style>
+  .filterDiv {
+  float: left;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+  }
+
+  .show {
+    display: block;
+  }
+
+  .container-fluid {
+
+    overflow: hidden;
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+  background-color: #ddd;
+  }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  hr{
+    background-color: black;
+    height: 1px;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>NAVbar</h1>
+    <h1>-----------------</h1>
+  </nav>
+  <div>
+    <button class="btn active" onclick="filterSelection('all')"> 모두</button>
+    <button class="btn" onclick="filterSelection('chest')"> 가슴</button>
+    <button class="btn" onclick="filterSelection('triceps')"> 삼두</button>
+    <button class="btn" onclick="filterSelection('deltoid')"> 어깨</button>
+    <button class="btn" onclick="filterSelection('back')"> 등</button>
+    <button class="btn" onclick="filterSelection('leg')"> 하체</button>
+    <button class="btn" onclick="filterSelection('hip')"> 엉덩이</button>
+    <button class="btn" onclick="filterSelection('abs')"> 복근</button>
+  </div>
+  <hr>
+  <div class="container-fluid text-center">
+    <div class="thumbnail filterDiv chest triceps">
+      <iframe  src="https://www.youtube.com/embed/0htUrZ8AO2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>체어 푸쉬업</strong></p>
+    </div>
+    <div class="thumbnail filterDiv triceps">
+      <iframe src="https://www.youtube.com/embed/yaNVxOnhYrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>딥스</strong></p>
+    </div>
+    <div class="thumbnail filterDiv leg">
+      <iframe src="https://www.youtube.com/embed/doDNksSOEQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>런지</strong></p>
+    </div>
+    <div class="thumbnail filterDiv leg abs">
+      <iframe src="https://www.youtube.com/embed/Km0s0Z1ixHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>싯업 스탠드</strong></p>
+    </div>
+    <div class="thumbnail filterDiv hip">
+      <iframe src="https://www.youtube.com/embed/kcAQLm0p_rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>힙 쓰러스트</strong></p>
+    </div>
+    <div class="thumbnail filterDiv back">
+      <iframe src="https://www.youtube.com/embed/PAtuFgk4l9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>풀업 투 원 사이드</strong></p>
+    </div>
+    <div class="thumbnail filterDiv chest">
+      <iframe src="https://www.youtube.com/embed/ZBw8usDsHIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>슬라이딩 체스트 플라이</strong></p>
+    </div>
+    <div class="thumbnail filterDiv quadriceps">
+      <iframe src="https://www.youtube.com/embed/Km0s0Z1ixHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>싯업 스탠드</strong></p>
+    </div>
+  </div>
+  <script>
+    filterSelection("all")
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+      }
+  </script>
+</body>
+<footer>
+  <h1>-----------------</h1>
+  <h1>footer</h1>
+</footer>
+</html>

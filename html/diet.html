@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+  <style>
+  .filterDiv {
+  float: left;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+  }
+
+  .show {
+    display: block;
+  }
+
+  .container-fluid {
+
+    overflow: hidden;
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+
+  .btn1{
+    background-color: #FCF3CF;
+  }
+
+  .btn2{
+    background-color: #DEF0EC;
+  }
+
+  .btn:hover {
+  background-color: #ddd;
+  }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .glyphicon-search{
+    font-size:30px;
+  }
+
+  hr{
+    background-color: black;
+    height: 1px;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>NAVbar</h1>
+    <h1>-----------------</h1>
+  </nav>
+  <div class="topnav">
+    <input type="text" id="Search" onkeyup="search()" placeholder="질환명을 입력하세요">
+    <input type="submit">
+    <span class="glyphicon glyphicon-search"></span>
+  </div>
+  <br style="clear:both;">
+  <br>
+  <div id="myBtnContainer">
+    <button class="btn btn1 active" onclick="filterSelection('all')"> 모두</button>
+    <button class="btn btn1" onclick="filterSelection('diet')"> 다이어트</button>
+    <button class="btn btn1" onclick="filterSelection('bulkup')"> 체중&근육량 증량</button>
+    <button class="btn btn2" onclick="filterSelection('heart')"> 심장</button>
+    <button class="btn btn2" onclick="filterSelection('intestine')"> 장</button>
+    <button class="btn btn2" onclick="filterSelection('brain')"> 뇌</button>
+    <button class="btn btn2" onclick="filterSelection('skin')"> 피부</button>
+    <button class="btn btn2" onclick="filterSelection('mental')"> 정신</button>
+    <button class="btn btn2" onclick="filterSelection('cancer')"> 암</button>
+    <button class="btn btn2" onclick="filterSelection('etc')"> 기타</button>
+  </div>
+  <br>
+  <div class="weight">
+    <br>
+    <h1>질환별 식단</h1>
+    <hr>
+    <div class="container-fluid text-center">
+      <div class="thumbnail filterDiv diet">
+        <iframe src="https://www.youtube.com/embed/GbwpAN_AYM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong>1</strong></p>
+      </div>
+      <div class="thumbnail filterDiv diet">
+        <iframe src="https://www.youtube.com/embed/MIB5tKaLTxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong>2</strong></p>
+      </div>
+      <div class="thumbnail filterDiv diet">
+        <iframe src="https://www.youtube.com/embed/GuPC1qy17DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong>3</strong></p>
+      </div>
+      <div class="thumbnail filterDiv diet">
+      <iframe src="https://www.youtube.com/embed/4c6DegQ4198" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong>4</strong></p>
+      </div>
+      <div class="thumbnail filterDiv diet">
+        <iframe src="https://www.youtube.com/embed/ctjwWMOysFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong>5</strong></p>
+      </div>
+
+    </div>
+  </div>
+  <div class="illness">
+    <br>
+    <h1>질환별 식단</h1>
+    <hr>
+    <div class="container-fluid text-center">
+      <div class="thumbnail filterDiv intestine">
+        <iframe src="https://www.youtube.com/embed/pwCcloeGUE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="target"><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?&mode=view&articleNo=66815&articleLimit=0" target="_blank">과민성 대장증후군</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv intestine cancer">
+        <iframe src="https://www.youtube.com/embed/eP_W50cjAXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?mode=view&articleNo=109049&article.offset=0&articleLimit=12&srSearchVal=%EB%8C%80%EC%9E%A5" target="_blank">대장직장암</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv intestine">
+        <iframe src="https://www.youtube.com/embed/cUN0c0AHZy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?&mode=view&articleNo=66836&articleLimit=0" target="_blank">변비</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv etc">
+        <iframe src="https://www.youtube.com/embed/DdNvWJHKEIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?&mode=view&articleNo=109035&articleLimit=0" target="_blank">갑상성 질환</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv mental">
+        <iframe src="https://www.youtube.com/embed/N2QwW0P6MSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?&mode=view&articleNo=109056&articleLimit=0" target="_blank">우울증</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv brain">
+        <iframe src="https://www.youtube.com/embed/I6TdM2accDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?mode=view&articleNo=108737&article.offset=0&articleLimit=12&srSearchVal=%EB%87%8C" target="_blank">뇌졸증</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv brain">
+        <iframe src="https://www.youtube.com/embed/VMj0DzBbefU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?mode=view&articleNo=70487&article.offset=0&articleLimit=12&srSearchVal=%EC%B9%98%EB%A7%A4" target="_blank">치매</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv heart">
+        <iframe src="https://www.youtube.com/embed/OaLBMr2Ny7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="https://gs.severance.healthcare/health/lifecare/nutrition/diseasediet.do?mode=view&articleNo=70491&article.offset=0&articleLimit=12&srSearchVal=%EC%8B%AC%EC%9E%A5" target="_blank">심부전</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv skin">
+        <iframe src="https://www.youtube.com/embed/yLpXDTnlJrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><strong><a href="" target="_blank">아토피 피부염</a></strong></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    filterSelection("all")
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+      }
+  </script>
+</body>
+<footer>
+  <h1>-----------------</h1>
+  <h1>footer</h1>
+</footer>
+</html>

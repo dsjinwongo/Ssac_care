@@ -2,16 +2,15 @@
 # Header
 --------------------------------------------------------------*/
 body{
-  background-color: #040404;
+  background-color: #000000;
 }
 
 #header {
-  transition: ease-in-out 0.3s;
-  position: relative;
+  transition: ease-in-out 0.3s; /*전환 효과가 서서히 일어남*/
   height: 150px;
   display: flex;
-  align-items: top;
-  z-index: 997;
+  align-items: top; /*수직축 정렬 */
+  z-index: 997; /*z축에서 올라오는 정*/
   overflow-y: auto;
 }
 
@@ -34,46 +33,6 @@ body{
   display: inline-block;
 }
 
-#header h2 {
-  font-size: 24px;
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-#header h2 span {
-  color: #fff;
-  border-bottom: 2px solid #18d26e;
-  padding-bottom: 6px;
-}
-
-#header img {
-  padding: 0;
-  margin: 0;
-}
-
-#header .social-links {
-  margin-top: 40px;
-  display: flex;
-}
-
-#header .social-links a {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  line-height: 1;
-  margin-right: 8px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-#header .social-links a:hover {
-  background: #18d26e;
-}
-
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
@@ -82,9 +41,6 @@ body{
     font-size: 20px;
     line-height: 30px;
   }
-  #header .social-links {
-    margin-top: 15px;
-  }
   #header .container {
     display: flex;
     flex-direction: column;
@@ -92,42 +48,6 @@ body{
   }
 }
 
-/* Header Top */
-#header.header-top {
-  height: 80px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.9);
-}
-
-#header.header-top .social-links, #header.header-top h2 {
-  display: none;
-}
-
-#header.header-top h1 {
-  margin-right: auto;
-  font-size: 36px;
-}
-
-#header.header-top .container {
-  display: flex;
-  align-items: center;
-}
-
-#header.header-top .navbar {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  #header.header-top {
-    height: 60px;
-  }
-  #header.header-top h1 {
-    font-size: 26px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -145,6 +65,7 @@ body{
   padding: 0;
   display: flex;
   list-style: none;
+  flex-direction: column;
   align-items: center;
 }
 

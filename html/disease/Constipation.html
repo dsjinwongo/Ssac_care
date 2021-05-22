@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>NAVbar</h1>
+    <h1>-----------------</h1>
+  </nav>
+  <div>
+    <br>
+    <h1>질환별 식단</h1>
+    <hr>
+    <div class="container-fluid text-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cUN0c0AHZy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2>변비란?</h2>
+      <p>
+      일반적으로 변비라고 하면 변이 잘 나오지 않는 것으로 생각하지만, 의학적으로 보면 변이 장기간 장관 내에 오래 머무르며 수분이 지나치게 흡수되어 대변 중의 수분량이 매우 적어진 상태로, 배변이 3~4일에 한번 미만인 경우라고 정의해요.
+      </p>
+      <hr>
+      <h2>변비의 종류</h2>
+      <p>
+변비는 발생기전에 따라 크게 기능성 변비(식사성, 습관성, 이완성, 경련성 변비)와 원인 질환의 치료가 필요한 기질성 변비로 구분할 수 있는데, 이 글에서는 기능성 변비에 대해서만 설명드리고자 합니다.
+<br>
+식사성 변비는 섬유질이 적은 식사를 하거나 식사량이 적을 때 발생하는 변비로, 섬유질이 많은 채소나 과일을 많이 섭취하거나 적절한 식사량을 유지하는 것이 변비 완화에 도움이 될 수 있어요. 다만, 섬유질 식품을 많이 먹을 때 수분 섭취가 부족하게 되면, 변이 딱딱해 질 수 있으므로 충분한 수분섭취(하루 8잔 내외)를 함께 하는 것도 중요해요.
+<br>
+습관성 변비는 반복되는 배변자극을 무시해서 생기거나 설사제, 관장의 오남용으로 생길 수 있기 때문에 규칙적인 배변습관을 가지려는 노력이 필요해요.
+<br>
+이완성 변비는 대장의 긴장이 저하되거나 운동기능이 둔화되며 생길 수 있고, 복부의 근력이 약해져서 배변 시 충분한 복압을 얻을 수 없어서 생기기 때문에 적절한 운동을 하며 근력을 키우거나, 섬유질이 많은 식사나 변의 부피를 늘릴 수 있는 약제를 사용하는 것이 치료에 도움이 될 수 있어요.
+<br>
+경련성 변비는 부교감신경 자극에 의해 대장이 지나치게 긴장하여, 변의 이동이 장애를 받아 생기는 변비로 대표적으로 과민성 대장증후군에 의한 변비가 이에 속해요. 이때는 장의 운동을 조정하는 약제나 항불안제 등을 사용하는 것이 도움이 될 수 있어요.
+</p>
+  </div>
+  <script>
+    filterSelection("all")
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+      }
+  </script>
+</body>
+<footer>
+  <h1>-----------------</h1>
+  <h1>footer</h1>
+</footer>
+</html>

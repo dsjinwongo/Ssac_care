@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>NAVbar</h1>
+    <h1>-----------------</h1>
+  </nav>
+  <div>
+    <br>
+    <h1>질환별 식단</h1>
+    <hr>
+    <div class="container-fluid text-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pwCcloeGUE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2>과민성 대장증후군이란?</h2>
+      <p>과민성 대장증후군은 대장의 기능성 질환 중 하나로 배변 양상의 변화와 함께 복통 및 다양한 복부불편감 증상이 나타나지만, 이 증상의 원인에 대해 설명할 수 있는 기질적 원인이 없는 것이 특징인 질병이예요.
+      현재 정확한 원인은 밝혀지지 않았지만 스트레스와 같은 심리적요인, 유전적요인, 위장염, 특정한 음식에 대한 과민반응 등이 주요한 요인으로 고려되고 있으며, 최근 과민성 대장증후군 환자의 장내 미생물의 구성이 비정상적으로 변한다는 연구결과도 발표된 바 있어요.
+      주요 증상으로는 복통 및 복부불편감을 동반한 배변양상의 변화입니다. 배변양상의 변화로는 설사형, 변비형, 설사변비교대형이 있으며, 배변 후에 증상이 완화되는 것이 특징이예요. 또한 체중감소가 나타나는 경우는 거의 없다는 것도 특징이지요.
+      </p>
+
+
+      <hr>
+      <h2>과민성 대장증후군의 식사요법</h2>
+      <p>안타깝지만 아직까지 과민성 대장증후군을 치료하는 특별한 방법이나 식사요법은 없습니다. 다만 증상의 조절과 사회생활이 가능한 상태를 목표로 약물을 사용하거나, 불편감을 일으키는 식품을 제외하고, 생활습관을 개선하는 것들이 고려되고 있지요.
+      최근에는 “저 포드맵 식사(low FODMAP diet)”가 과민성 대장증후군 환자의 증상을 완화시켰다는 연구가 발표되기도 했는데요. 여기서 포드맵이란 발효성의 올리고당, 이당류, 단당류, 당알콜로 소장에서 흡수되지 않고 대장으로 이동하면서 삼투압작용에 의해 장의 운동을 변화시키거나, 대장 내 박테리아에 의해 발효되면서 많은 양의 가스를 생성하게 하는 것으로 알려지면서, 포드맵이 함유된 식품을 적게 섭취하는 것 만으로도 증상이 완화된다는 것이지요.
+      다만 올리고당, 이당류, 단당류, 당알콜 등 포드맵의 성분은 기후나 토양의 영향을 받기 때문에 나라나 지역마다 식품 성분의 분석 값이 달라질 수 있고, 개인별로 증상의 정도나 불편한 식품들이 다를 수 있어요.
+      그렇기 때문에 포드맵인지 아닌지 무조건 따지기 보다는 식사일기를 쓰는 습관을 가지고, 많이 먹었을 때 문제가 되는 식품은 소량 섭취하며 증상을 살펴보는 노력이 필요해요. 그리고 영양정보표시나 식품성분표를 확인하는 습관이 도움이 되겠는데, “액상과당, 꿀, 밀, 콩”등은 대표적인 포드맵 식품이므로 이것이 함유된 식품은 주의하시는 것이 좋아요.
+      </p>
+  </div>
+  <script>
+    filterSelection("all")
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+      }
+  </script>
+</body>
+<footer>
+  <h1>-----------------</h1>
+  <h1>footer</h1>
+</footer>
+</html>

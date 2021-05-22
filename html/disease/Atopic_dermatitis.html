@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>NAVbar</h1>
+    <h1>-----------------</h1>
+  </nav>
+  <div>
+    <br>
+    <h1>질환별 식단</h1>
+    <hr>
+    <div class="container-fluid text-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yLpXDTnlJrk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+      <h2>아토피피부염이란?</h2>
+      <p>
+        아토피피부염은 주로 유아기 혹은 소아기에 시작하여 만성적으로 지속되거나 재발하는 알레르기성 피부질환으로, 심한 가려움증, 피부 건조증, 붉은 발진이나 긁은 자국의 피부 병변이 주요 증상이에요.
+      </p>
+      <hr>
+      <h2>아토피피부염의 유발 요인</h2>
+      <p>
+        아토피피부염이 발병하는 원인은 아직 명확하지 않지만 유전적인 소인과 환경적인 요인, 그리고 면역학적 반응 및 피부보호장벽의 이상 등이 주요 원인으로 여겨지고 있어요. 또한 아토피피부염은 식품알레르기와의 연관성이 높아요. 우리나라에서는 우유, 달걀, 땅콩, 밀, 콩을 포함한 알레르기 유발 물질 22가지에 대한 의무표시제가 있어요. 제품 구입 시 알레르기 유발 식품 표시 사항을 꼼꼼히 확인해야해요.
+      </p>
+      <hr>
+      <h2>아토피피부염의 식사요법</h2>
+      <p>
+        아토피피부염을 치료하기 위해서는 피부의 보습, 악화 요인의 제거, 그리고 적절한 약물치료 등을 포함한 체계적이고 다각적인 접근이 필요해요. 만약 아토피피부염이 특정 식품에 대한 알레르기 반응으로 나타난 경우라면 식단에서 원인이 되는 식품을 제거해야 해요.
+        그러나, 식품알레르기를 예방하기 위해 식품알레르기 발생이 높은 식품을 무조건 제한하는 것은 권장하지 않아요. 정확한 진단 없이 알레르기 발생이 높은 식품을 제한하면 영양문제를 일으킬 수 있어요. 심한 아토피피부염의 경우 예방적 차원의 접근이 필요할 수 있지만, 검사를 시행한 후 제한하도록 해야해요. 특정 식품 섭취 후 즉각적인 피부 반응이 일어났던 과거력이 있더라도 무조건 그 음식을 제한하기보다 전문의의 진료를 받고 인과관계를 확인한 후 제한하도록 해요.
+        알레르기검사 외에도 식사일기를 작성해보면 도움이 돼요. 섭취한 음식과 재료, 장소, 증상 등을 기록한 식사일기를 분석하여 의료진과 상의해서 검사를 통해 확인할 수 없는 식품알레르기의 원인 식품을 유추할 수 있어요. 또한 식사일기를 통해 영양섭취상태를 평가하여 식품 제한으로 인한 영양불균형이 발생하지 않도록 관리할 수 있어요.
+      </p>
+  </div>
+  <script>
+    filterSelection("all")
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+      }
+  </script>
+</body>
+<footer>
+  <h1>-----------------</h1>
+  <h1>footer</h1>
+</footer>
+</html>

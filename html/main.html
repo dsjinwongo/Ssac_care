@@ -4,6 +4,7 @@
 
   <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,32 +16,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- jquery component -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
     <title></title>
 
+    <!-- css component -->
     <link rel="stylesheet" href="main.css">
+    <!-- js component -->
+    <script src="main.js"></script>
 
   </head>
 
 
   <body>
 
+    <!-- menu section -->
+    <div id="menu">
+
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <div class="menu-inner">
+        <ul>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+        </ul>
+      </div>
+    </div>
+    <!-- menu section close-->
+
     <!-- ======= Header ======= -->
     <header id="header">
       <div class="container">
 
-        <h1><a href="main.html">header</a></h1>
-
-      <!--  <nav id="navbar" class="navbar">
-                <ul>
-                  <li><a class="nav-link active" href="#header">Home</a></li>
-                  <li><a class="nav-link" href="#about">About</a></li>
-                  <li><a class="nav-link" href="#resume">Resume</a></li>
-                  <li><a class="nav-link" href="#services">Services</a></li>
-                  <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                  <li><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar --> -->
+        <h1><a href="main.html">Ssac Care</a></h1>
 
       </div>
 
@@ -48,9 +65,10 @@
 
     <!-- Home section-->
     <home id="home">
+
       <div class="row">
+
         <!-- 설명을 carousel방식으로 display -->
-        <div class="col-lg-10">
           <div id="myCarousel" class="carousel slide text-center container-fluid" style="width=100%" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -83,21 +101,6 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        </div>
-        <!-- navbar가 들어갈 자리 -->
-        <div class="col-lg-2">
-          <nav id="navbar" class="navbar">
-                  <ul>
-                    <li><a class="nav-link" href="#header">Home</a></li>
-                    <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#resume">Resume</a></li>
-                    <li><a class="nav-link" href="#services">Services</a></li>
-                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                  </ul>
-                  <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
-        </div>
       </div>
 
     </home>
@@ -111,16 +114,14 @@
       </div>
     </jbody>
 
-    <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- footer section -->
+    <footer id="footer">
 
-    <script src="main.js"></script>
+      <div class="container">
+        <h1>footer</h1>
+      </div>
+
+    </footer>
 
   </body>
 </html>

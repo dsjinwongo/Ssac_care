@@ -1,0 +1,90 @@
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  border-radius: 0.35rem;
+  border: 1px solid grey;
+  margin : 10px;
+  border-radius: 0.35rem;
+  opacity: 1;
+  padding: 10px;
+}
+.back{
+  background-color: white;
+}
+.bg-img-cover {
+  margin : auto auto !important;
+  padding: 2.5rem ;
+  max-width : 600px;
+}
+iframe{
+  margin : auto auto !important;
+  background-color: white;
+  padding : 10px;
+}
+.main{
+  margin : auto auto;
+  width : 516px;
+  height: 500px;
+  min-width: 516px;
+  border-radius: 0.35rem;
+  background-color: white;
+}
+.site-h{
+  font-size: 30px;
+  position: relative;
+  padding-top: 20px;
+}
+.site-h::before{
+  content: "";
+  left: 46%;
+  top: 0;
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #fd7e14;
+}
+.site-h1{
+  font-size: 20px;
+  position: relative;
+  padding-top: 10px;
+}
+.site-h1::before{
+  content: "";
+  left: 0%;
+  top: 0;
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background: #fd7e14;
+}
+.contents{
+  height:250px;
+  overflow-y: scroll;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.contents::-webkit-scrollbar {
+  width: 10px;
+}
+.contents::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.contents::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+a{
+  color: black;
+}
+button:hover{
+  background-color: grey;
+}
+a:hover{
+  color:white;
+}

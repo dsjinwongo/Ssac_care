@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>workout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+  <style>
+  .filterDiv {
+  float: left;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+  }
+
+  .show {
+    display: block;
+  }
+
+  .container-fluid {
+
+    overflow: hidden;
+  }
+
+  .btn:hover {
+  background-color: #ddd;
+  }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .glyphicon-search{
+    font-size:30px;
+  }
+
+  .thumbnail {
+    margin: 10px;
+  }
+
+  .thumbnail p{
+    margin-top: 5px;
+    color:black;
+  }
+
+  .thumbnail img{
+    width: 250px;
+    height: 300px;
+  }
+
+  hr{
+    background-color: black;
+    height: 1px;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>NAVbar</h1>
+    <h1>-----------------</h1>
+  </nav>
+  <div class="topnav">
+    <input type="text" id="Search" onkeyup="search()" placeholder="질환명을 입력하세요">
+    <input type="submit">
+    <span class="glyphicon glyphicon-search"></span>
+  </div>
+  <br style="clear:both;">
+  <br>
+  <div class="dropdown">
+    <button class="dropbtn">질환별 식단</button>
+    <div class="dropdown-content">
+      <button class="btn" onclick="filterSelection('all')"> 모두</button>
+      <button class="btn" onclick="filterSelection('heart')"> 심장</button>
+      <button class="btn" onclick="filterSelection('intestine')"> 장</button>
+      <button class="btn" onclick="filterSelection('brain')"> 뇌</button>
+      <button class="btn" onclick="filterSelection('skin')"> 피부</button>
+      <button class="btn" onclick="filterSelection('mental')"> 정신</button>
+      <button class="btn" onclick="filterSelection('cancer')"> 암</button>
+    </div>
+  </div>
+  <br>
+  <div class="illness">
+    <br>
+    <h1>질환별 식단</h1>
+    <hr>
+    <div class="container-fluid text-center">
+      <div class="thumbnail filterDiv intestine">
+        <image src="image/IBS.png">
+        <p class="target"><strong><a href="disease/IBS.html" target="_blank">과민성 대장증후군</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv intestine cancer">
+        <image src="image/Colorectal_cancer.jpeg">
+        <p><strong><a href="disease/Colorectal_cancer.html" target="_blank">대장직장암</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv intestine">
+        <image src="image/Constipation.jpeg">
+        <p><strong><a href="disease/Constipation.html" target="_blank">변비</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv etc">
+        <image src="image/Thyroid.jpeg">
+        <p><strong><a href="disease/Thyroid" target="_blank">갑상성 질환</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv mental">
+        <image src="image/Depression.jpeg">
+        <p><strong><a href="disease/Depression.html" target="_blank">우울증</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv brain">
+        <image src="image/Vascular_dementia.jpg">
+        <p><strong><a href="disease/Vascular_dementia.html" target="_blank">치매</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv brain">
+        <image src="image/Stroke.jpeg">
+        <p><strong><a href="Stroke" target="_blank.html">뇌졸증</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv heart">
+        <image src="image/Heart_failure.jpeg">
+        <p><strong><a href="disease/Heart_failure.html" target="_blank">심부전</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv skin">
+        <image src="image/Atopic_dermatitis.jpg">
+        <p><strong><a href="disease/Atopic_dermatitis.html" target="_blank">아토피 피부염</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/Leukemia.png">
+        <p><strong><a href="disease/Leukemia.html" target="_blank">백혈병</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/Stomatitis.jpeg">
+        <p><strong><a href="disease/Stomatitis.html" target="_blank">구내염</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/GERD.jpeg">
+        <p><strong><a href="disease/GERD.html" target="_blank">위-식도역류병</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/VitaminE.jpeg">
+        <p><strong><a href="disease/VitaminE.html" target="_blank">비타민E</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image width="300" height="400" src="image/VitaminC.jpeg">
+        <p><strong><a href="disease/VitaminC.html" target="_blank">비타민C</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/VitaminB1.jpeg">
+        <p><strong><a href="disease/VitaminB1.html" target="_blank">비타민B1</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/VitaminA.jpeg">
+        <p><strong><a href="disease/VitaminA.html" target="_blank">비타민A</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/VitaminB6.jpeg">
+        <p><strong><a href="disease/VitaminB6.html" target="_blank">비타민B6</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/VitaminD.jpeg">
+        <p><strong><a href="disease/VitaminD.html" target="_blank">비타민D</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/HepatitisA.jpeg">
+        <p><strong><a href="disease/HepatitisA.html" target="_blank">A형 간염</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/Gout.jpeg">
+        <p><strong><a href="disease/Gout.html" target="_blank">통풍</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/Viral_pneumonia.jpeg">
+        <p><strong><a href="disease/Viral_pneumonia.html" target="_blank">바이러스성 폐렴</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/Lactose_intolerance.jpeg">
+        <p><strong><a href="disease/Lactose_intolerance.html" target="_blank">유당 불내증</a></strong></p>
+      </div>
+      <div class="thumbnail filterDiv ">
+        <image src="image/HepatitisC.jpeg">
+        <p><strong><a href="disease/HepatitisC.html" target="_blank">C형 간염</a></strong></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    filterSelection("all")
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+      }
+  </script>
+</body>
+<footer>
+  <h1>-----------------</h1>
+  <h1>footer</h1>
+</footer>
+</html>

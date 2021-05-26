@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>task 2</title>
-    <link href="css\login.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,8 +19,31 @@
         if(!_nm||!_id||!_tel|| !_email){
           alert("작성되지 않은 란이 있습니다.");
         }
+        else{
+          alert(_nm+"님의 pw는 이것입니다.");
+        }
       }
     </script>
+    <style media="screen">
+
+      body{
+        position: relative;
+      }
+      body::before{
+          content: "";
+          background: url('image/disease_back.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          opacity: 0.3;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          z-index: -1;
+      }
+    </style>
   </head>
 
   <body>
@@ -30,7 +53,7 @@
       <div class="container">
         <div class="wrap-login ">
             <div class="text-center form1"style="margin-Top:165px">
-                <h1 >FIND_PW</h1>
+                <h1 class="site-h">FIND_PW</h1>
                 <form class="form" >
                   <div class="form-group">
                     <input class="form-control" type="text"id="received_nm"placeholder="NAME"required><br>
@@ -45,8 +68,8 @@
                       <p>Return <a href="login.html" >Login Page</a> </p>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <input type="submit" class="btn log-btn" value="Login" onclick="func();">
+                  <div class="log-btn">
+                      <button  class=" btn log-btn" value="Login" onclick="func();"  > Find</button>
                   </div>
                 </form>
             </div>

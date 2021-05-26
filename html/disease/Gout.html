@@ -2,74 +2,105 @@
 <html>
 <head>
   <title>workout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style1.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script1.js"></script>
-  <style>
+  <meta charset="utf-8">
+  <link href="../../css/disease.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <style media="screen">
+
+
+    .all{
+      position: relative;
+    }
+    .all::before{
+        content: "";
+        background: url('../image/disease_back.jpg');
+        background-size: cover;
+        opacity: 0.2;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
 
   </style>
 </head>
 <body>
-  <nav>
-    <h1>NAVbar</h1>
-    <h1>-----------------</h1>
-  </nav>
-  <div>
-    <br>
-    <h1>질환별 식단</h1>
-    <hr>
-    <div class="container-fluid text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/VlRrBiaDAFg?start=131" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <hr>
-      <h2>통풍이란?</h2>
-      <p>
-        통풍은 요산이 몸 안에 쌓여서 생기는 질환이예요. 요산은 단백질의 일종인 퓨린이라는 물질이 몸 안에서 대사되면서 만들어져요. 대부분은 소변으로 배설 되지만 혈액 중에 많아져 관절이나 연골 주변에 요산 결절이 쌓이면 관절을 자극하여 염증을 일으키는 질환이에요.
-      </p>
-      <hr>
-      <h2>통풍의 식사요법</h2>
-      <p>
-        • 먼저, 퓨린 함량이 높은 식품을 제한해야 해요.<br>
-        퓨린은 내장류(곱창, 간 등), 진한 고기 국물(곰국, 갈비탕 등), 갈비, 삼겹살, 등푸른 생선(고등어, 꽁치, 삼치 등), 멸치 등에 많이 들어있어요. 과량의 단백질 섭취는 체내에서 요산 생성을 증가시키므로, 고기, 생선, 두부 등 단백질 식품은 적당량 섭취해야 해요.<br>
-        <br>
-        • 적절한 체중을 유지하는 것이 중요해요.<br>
-        과체중이거나 비만인 경우 통풍이 잘 발생하고, 관절에 더 무리를 줄 수 있어요. 체중을 줄이려면 식사량을 줄이면서 적절한 운동을 병행하는 것이 좋아요. 하지만, 급격한 체중 감소는 체지방이 분해되면서 혈중 산성 물질을 증가시켜 요산 배설을 어렵게 하므로 한 달에 1-2kg 정도 목표로 서서히 감량해야 해요.<br>
-        <br>
-        • 알코올 섭취를 제한해야 해요.<br>
-        알코올 섭취는 체내 요산수치를 증가시키고, 체내 젖산을 축적시켜 요산 배설을 어렵게 해요. 특히 맥주에 퓨린이 많이 들어 있어요.<br>
-        <br>
-        • 과다한 지방 섭취도 제한해야 해요.<br>
-        과다한 지방섭취는 요산의 배설을 어렵게 하므로 전이나 튀김과 같은 기름진 음식을 제한하고, 땅콩, 호두, 잣 등 견과류도 많이 먹지 않는 것이 좋아요.<br>
-        <br>
-        • 물은 충분히 마시는 것이 좋아요.<br>
-        하루 10잔 정도의 물을 마시면 요산 배설에 도움을 줄 수 있어요. 단, 신장질환이 있는 경우라면 의료진과 상의하여 수분섭취량을 조절해야 해요. 또한 신선한 채소와 과일에 풍부한 섬유소, 엽산, 비타민 C는 혈액에 요산이 쌓이는 것을 막아주므로 충분히 섭취하는 것이 좋아요.<br>
-      </p>
-      <hr>
-      <table>
-        <tr>
-          <th>많은 식품(150~800mg)</th>
-          <th>중간 식품(50~150mg)</th>
-          <th>적은 식품(0~15mg)</th>
-        </tr>
-        <tr>
-          <td>내장(곱창, 간 등), 갈비, 삼겹살, 진한 고기국물(곰국, 갈비탕), 고등어, 꽁치, 멸치</td>
-          <td>고기류, 흰살생선, 조개, 콩류, 버섯류, 아스파라거스, 시금치</td>
-          <td>달걀, 치즈, 곡류, 과일, 채소</td>
-        </tr>
-        <tr>
-          <td>급성기 또는 증상이 심한 경우 제한</td>
-          <td>회복 정도에 따라 소량 섭취</td>
-          <td>제한없이 섭취</td>
-        </tr>
-      </table>
-    </div>
-  </div>
+  <div class=" all">
+      <nav>
+        <h1>NAVbar</h1>
+        <h1>-----------------</h1>
+      </nav>
+      <div class="container" >
+        <div class="card">
+            <div class="row back"  style="padding: 10px;">
+              <div class="col-sm-8 bg-img-cover">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VlRrBiaDAFg?start=131" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-4 p-5 main" >
+                  <h1 class="site-h mb-4  text-center">통풍</h1>
+                  <div class="list">
+                    <a href="#info1"><button type="button" class="btn btn-secondary">통풍</button></a>
+                    <a href="#info2"><button type="button" class="btn btn-secondary">통풍의 식사요법</button></a>
+                  </div>
+                  <div id= "info"class="contents">
+                    <h2 class="site-h1" id="info1">통풍이란?</h2>
+                    <p>
+                      통풍은 요산이 몸 안에 쌓여서 생기는 질환이예요. 요산은 단백질의 일종인 퓨린이라는 물질이 몸 안에서 대사되면서 만들어져요. 대부분은 소변으로 배설 되지만 혈액 중에 많아져 관절이나 연골 주변에 요산 결절이 쌓이면 관절을 자극하여 염증을 일으키는 질환이에요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info2">통풍의 식사요법</h2>
+                    <p>
+                      <strong>• 먼저, 퓨린 함량이 높은 식품을 제한해야 해요.</strong><br>
+                      퓨린은 내장류(곱창, 간 등), 진한 고기 국물(곰국, 갈비탕 등), 갈비, 삼겹살, 등푸른 생선(고등어, 꽁치, 삼치 등), 멸치 등에 많이 들어있어요. 과량의 단백질 섭취는 체내에서 요산 생성을 증가시키므로, 고기, 생선, 두부 등 단백질 식품은 적당량 섭취해야 해요.<br>
+                      <br>
+                      <strong>• 적절한 체중을 유지하는 것이 중요해요.</strong><br>
+                      과체중이거나 비만인 경우 통풍이 잘 발생하고, 관절에 더 무리를 줄 수 있어요. 체중을 줄이려면 식사량을 줄이면서 적절한 운동을 병행하는 것이 좋아요. 하지만, 급격한 체중 감소는 체지방이 분해되면서 혈중 산성 물질을 증가시켜 요산 배설을 어렵게 하므로 한 달에 1-2kg 정도 목표로 서서히 감량해야 해요.<br>
+                      <br>
+                      <strong>• 알코올 섭취를 제한해야 해요.</strong><br>
+                      알코올 섭취는 체내 요산수치를 증가시키고, 체내 젖산을 축적시켜 요산 배설을 어렵게 해요. 특히 맥주에 퓨린이 많이 들어 있어요.<br>
+                      <br>
+                      <strong>• 과다한 지방 섭취도 제한해야 해요.</strong><br>
+                      과다한 지방섭취는 요산의 배설을 어렵게 하므로 전이나 튀김과 같은 기름진 음식을 제한하고, 땅콩, 호두, 잣 등 견과류도 많이 먹지 않는 것이 좋아요.<br>
+                      <br>
+                      <strong>• 물은 충분히 마시는 것이 좋아요.</strong><br>
+                      하루 10잔 정도의 물을 마시면 요산 배설에 도움을 줄 수 있어요. 단, 신장질환이 있는 경우라면 의료진과 상의하여 수분섭취량을 조절해야 해요. 또한 신선한 채소와 과일에 풍부한 섬유소, 엽산, 비타민 C는 혈액에 요산이 쌓이는 것을 막아주므로 충분히 섭취하는 것이 좋아요.<br>
+                    </p>
+                    <hr>
+                    <table>
+                      <tr>
+                        <th>많은 식품(150~800mg)</th>
+                        <th>중간 식품(50~150mg)</th>
+                        <th>적은 식품(0~15mg)</th>
+                      </tr>
+                      <tr>
+                        <td>내장(곱창, 간 등), 갈비, 삼겹살, 진한 고기국물(곰국, 갈비탕), 고등어, 꽁치, 멸치</td>
+                        <td>고기류, 흰살생선, 조개, 콩류, 버섯류, 아스파라거스, 시금치</td>
+                        <td>달걀, 치즈, 곡류, 과일, 채소</td>
+                      </tr>
+                      <tr>
+                        <td>급성기 또는 증상이 심한 경우 제한</td>
+                        <td>회복 정도에 따라 소량 섭취</td>
+                        <td>제한없이 섭취</td>
+                      </tr>
+                    </table>기검사 외에도 식사일기를 작성해보면 도움이 돼요. 섭취한 음식과 재료, 장소, 증상 등을 기록한 식사일기를 분석하여 의료진과 상의해서 검사를 통해 확인할 수 없는 식품알레르기의 원인 식품을 유추할 수 있어요. 또한 식사일기를 통해 영양섭취상태를 평가하여 식품 제한으로 인한 영양불균형이 발생하지 않도록 관리할 수 있어요.
+                    </p>
+                    </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+      <footer>
+        <h1>-----------------</h1>
+        <h1>footer</h1>
+      </footer>
+
 </body>
-<footer>
-  <h1>-----------------</h1>
-  <h1>footer</h1>
-</footer>
 </html>

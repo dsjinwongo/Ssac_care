@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>task 2</title>
-  <link href="css\login.css" rel="stylesheet">
+  <link href="../css/login.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,13 +25,31 @@
       }
     </script>
   </head>
+  <style media="screen">
 
-  <body style="backgroud-color: #f4f4f4" >
+    body{
+      position: relative;
+    }
+    body::before{
+        content: "";
+        background: url('image/disease_back.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.3;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
+  </style>
 
-    <div class="container" >
-      <div class="wrap-login ">
+  <body>
+    <div class="container-fluid" >
           <div class="text-center form1" >
-                <h1 >Login</h1>
+                <h1 class="site-h" >Login</h1>
                 <form class="form-group">
                   <div class="form-group">
                     <input class="form-control " type="text" name="" value="" id="received_id"placeholder="ID" required>
@@ -55,7 +73,6 @@
                 </form>
 
           </div>
-      </div>
     </div>
 
 

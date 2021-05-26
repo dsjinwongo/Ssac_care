@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>workout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style1.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script1.js"></script>
-  <style>
+  <title>GERD</title>
+  <meta charset="utf-8">
+  <link href="../../css/disease.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <style media="screen">
+
+
+    .all{
+      position: relative;
+    }
+    .all::before{
+        content: "";
+        background: url('../image/disease_back.jpg');
+        background-size: cover;
+        opacity: 0.2;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
 
   </style>
 </head>
 <body>
-  <nav>
-    <h1>NAVbar</h1>
-    <h1>-----------------</h1>
-  </nav>
-  <div>
-    <br>
-    <h1>질환별 식단</h1>
-    <hr>
-    <div class="container-fluid text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/aJibotYi2pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <hr>
-      <h2>위-식도역류병이란?</h2>
-      <p>
-        위-식도역류병은 구강과 식도를 거쳐 위로 들어갔던 음식물이 식도로 다시 역류해 증상을 유발하거나 점막을 손상시키는 질환이예요. 이 때 가슴이 쓰리거나 답답함, 트림, 구토, 삼킴곤란, 연하통과 같은 증상이 나타나요.
-      <hr>
-      <h2>위-식도역류병의 원인</h2>
-      <p>
-        위-식도역류병은 하부식도괄약근과 밀접한 관련이 있어요. 식도와 위의 경계에 위치하고 있는 하부식도괄약근은 음식을 삼킬 때나 트림할 때를 제외하고 항상 닫혀 있어 위 안의 내용물이 식도로 넘어오지 못하도록 막아줘요. 하지만, 하부식도괄약근의 힘이 약해지거나 부적절하게 열리게 되면 위 안의 내용물과 위산이 식도로 넘어 올라오게 돼요.
-      </p>
-      <hr>
-      <h2>위-식도역류병의 증상 조절</h2>
-      <p>
-        위 안의 내용물이 역류하게 되면서 속이 타는 것같이 심하게 쓰리거나 속이 답답한 증상을 느끼게 되는데, 이렇게 통증이 심할 때는 신맛이 강한 토마토주스와 감귤류 등은 피해야 해요. 위산분비를 증가시켜 위-식도 점막 염증 부위에 자극을 줄 수 있기 때문이지요. 또한, 맵고 신 음식, 커피(디카페인 포함), 술도 위산분비를 자극할 수 있어 피하는 것이 좋아요.
-      </p>
-      <hr>
-      <h2>위-식도역류를 예방하는 식습관</h2>
-      <p>
-        하부식도괄약근을 약하게 만들어 쉽게 역류를 일으키는 식품도 있어요. 커피(디카페인 포함), 민트류, 초콜릿, 술, 고지방 음식은 되도록 주의해요. 튀김, 볶음, 전 등의 조리법 대신 찌거나 삶는 조리법을 권장해요. 육류는 살코기 위주로, 닭과 오리는 조리 시 껍질을 제거하고 먹는 것이 좋아요. 흰살생선, 저지방우유, 요거트, 계란 등의 고단백저지방 음식을 선택하는 것도 좋아요.
-        <br>위-식도역류병을 예방하기 위해서는 평소의 생활습관 개선이 가장 중요해요. 과식을 할 경우 위산 분비를 증가시키는 경향이 있으므로 식사는 소량씩 여러 번에 나눠서 먹는 것이 좋아요. 위장의 음식물이 역류하지 않도록 ‘식사 후 바로 눕지 않기’, ‘취침 2시간 전에 먹지 않기’와 같은 습관을 지니는 것이 바람직해요. 또한, 정상체중을 유지하는 것은 복압을 낮추어 역류 증상을 줄이는데 도움을 주므로 비만하다면 체중조절을 하여 정상체중을 유지할 수 있도록 해요.
-      </p>
-    </div>
+  <div class=" all">
+      <nav>
+        <h1>NAVbar</h1>
+        <h1>-----------------</h1>
+      </nav>
+      <div class="container" >
+        <div class="card">
+            <div class="row back"  style="padding: 10px;">
+              <div class="col-sm-8 bg-img-cover">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aJibotYi2pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-4 p-5 main" >
+                  <h1 class="site-h mb-4  text-center">역류성 식도염</h1>
+                  <div class="list">
+                    <a href="#info1"><button type="button" class="btn btn-secondary">위-식도역류병</button></a>
+                    <a href="#info2"><button type="button" class="btn btn-secondary">원인</button></a>
+                    <a href="#info3"><button type="button" class="btn btn-secondary">증상 조절</button></a>
+                    <a href="#info4"><button type="button" class="btn btn-secondary">식습관</button></a>
+                  </div>
+                  <div id= "info"class="contents">
+                    <h2 class="site-h1" id="info1">위-식도역류병이란?</h2>
+                    <p>
+                      위-식도역류병은 구강과 식도를 거쳐 위로 들어갔던 음식물이 식도로 다시 역류해 증상을 유발하거나 점막을 손상시키는 질환이예요. 이 때 가슴이 쓰리거나 답답함, 트림, 구토, 삼킴곤란, 연하통과 같은 증상이 나타나요.
+                    <hr>
+                    <h2 class="site-h1" id="info2">위-식도역류병의 원인</h2>
+                    <p>
+                      위-식도역류병은 하부식도괄약근과 밀접한 관련이 있어요. 식도와 위의 경계에 위치하고 있는 하부식도괄약근은 음식을 삼킬 때나 트림할 때를 제외하고 항상 닫혀 있어 위 안의 내용물이 식도로 넘어오지 못하도록 막아줘요. 하지만, 하부식도괄약근의 힘이 약해지거나 부적절하게 열리게 되면 위 안의 내용물과 위산이 식도로 넘어 올라오게 돼요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info3">위-식도역류병의 증상 조절</h2>
+                    <p>
+                      위 안의 내용물이 역류하게 되면서 속이 타는 것같이 심하게 쓰리거나 속이 답답한 증상을 느끼게 되는데, 이렇게 통증이 심할 때는 신맛이 강한 토마토주스와 감귤류 등은 피해야 해요. 위산분비를 증가시켜 위-식도 점막 염증 부위에 자극을 줄 수 있기 때문이지요. 또한, 맵고 신 음식, 커피(디카페인 포함), 술도 위산분비를 자극할 수 있어 피하는 것이 좋아요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info4">위-식도역류를 예방하는 식습관</h2>
+                    <p>
+                      하부식도괄약근을 약하게 만들어 쉽게 역류를 일으키는 식품도 있어요. 커피(디카페인 포함), 민트류, 초콜릿, 술, 고지방 음식은 되도록 주의해요. 튀김, 볶음, 전 등의 조리법 대신 찌거나 삶는 조리법을 권장해요. 육류는 살코기 위주로, 닭과 오리는 조리 시 껍질을 제거하고 먹는 것이 좋아요. 흰살생선, 저지방우유, 요거트, 계란 등의 고단백저지방 음식을 선택하는 것도 좋아요.
+                      <br>위-식도역류병을 예방하기 위해서는 평소의 생활습관 개선이 가장 중요해요. 과식을 할 경우 위산 분비를 증가시키는 경향이 있으므로 식사는 소량씩 여러 번에 나눠서 먹는 것이 좋아요. 위장의 음식물이 역류하지 않도록 ‘식사 후 바로 눕지 않기’, ‘취침 2시간 전에 먹지 않기’와 같은 습관을 지니는 것이 바람직해요. 또한, 정상체중을 유지하는 것은 복압을 낮추어 역류 증상을 줄이는데 도움을 주므로 비만하다면 체중조절을 하여 정상체중을 유지할 수 있도록 해요.
+                    </p>
+                    </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+      <footer>
+        <h1>-----------------</h1>
+        <h1>footer</h1>
+      </footer>
+
   </div>
+
 </body>
-<footer>
-  <h1>-----------------</h1>
-  <h1>footer</h1>
-</footer>
 </html>

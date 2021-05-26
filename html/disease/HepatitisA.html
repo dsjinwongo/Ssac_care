@@ -2,53 +2,83 @@
 <html>
 <head>
   <title>workout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style1.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script1.js"></script>
-  <style>
+  <meta charset="utf-8">
+  <link href="../../css/disease.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <style media="screen">
+
+
+    .all{
+      position: relative;
+    }
+    .all::before{
+        content: "";
+        background: url('../image/disease_back.jpg');
+        background-size: cover;
+        opacity: 0.2;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
 
   </style>
 </head>
 <body>
-  <nav>
-    <h1>NAVbar</h1>
-    <h1>-----------------</h1>
-  </nav>
-  <div>
-    <br>
-    <h1>질환별 식단</h1>
-    <hr>
-    <div class="container-fluid text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/glaLxEEftHM?start=131" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <hr>
-      <h2>A형 간염의 식사요법</h2>
-      <p>
-        A형 간염은 바이러스에 의해 간에 염증이 발생하는 질환으로, 주로 간염 바이러스에 오염된 흙이나 물, 해산물을 통해 감염되거나 감염자의 대변을 통해 감염이 돼요. A형 간염의 증상으로 발열, 두통, 피로감, 식욕저하, 황달 등이 나타나는데 이 때 충분한 칼로리와 단백질을 공급하여 손상된 간세포 재생을 돕고 영양상태를 양호하게 유지하면 간기능 회복에 도움을 줄 수 있어요.
-        <br>
-        • 첫번째, 빠른 회복을 위해 충분한 칼로리 섭취가 필요해요.<br>
-        이를 위해 당질과 지방을 통해 칼로리 섭취를 늘려요. 흰죽만 먹기보다는 조리 시 참기름, 들기름 등을 충분히 사용한 영양죽을 섭취하거나, 시럽이나 버터를 바른 빵이나 감자 등의 간식 횟수를 늘려 고칼로리를 충분히 섭취하도록 해요.
-        <br>
-        • 두번째, 간세포 재생을 위해 단백질을 충분히 섭취해요.<br>
-        고기, 생선, 계란, 두부 등의 단백질 음식을 매끼 섭취하고, 식사로 섭취가 부족한 경우 삶은 계란 등으로 보충해 주세요.
-        <br>
-        • 세번째, 식사량이 적을 경우 소화되기 쉬운 음식을 소량씩 자주 섭취해요.
-        식욕 저하와 구토 등의 증상으로 음식을 많이 먹지 못할 경우, 칼로리 섭취가 부족할 수 있어요. 소화가 용이한 스프, 영양죽, 과일 주스 등의 간식을 소량씩 자주 섭취해 주세요. 더불어 조리 시 참기름, 깨, 식초 등 양념을 충분히 사용해서 식욕을 돋우어 보세요. 이러한 노력에도 섭취량을 늘리기가 힘들다면 영양사와 상의하여 알맞은 환자용식품을 통해 영양을 보충하는 방법도 있어요.
-        <br>
-        • 네번째, 비타민, 무기질 공급을 위해 신선한 채소와 과일을 충분히 섭취하고 하루 1-2회 유제품을 간식으로 섭취해요.
-        A형 간염을 예방하기 위해서 다음과 같은 위생관리가 권장돼요.
-        해산물 등의 음식은 85℃ 이상 열에서 1분 이상 가열하여 먹고, 물은 끓여서 마시는게 좋아요. 그리고 대변을 통해 감염될 수 있으니 화장실을 다녀온 후, 요리 전, 식사 전에는 물과 비누로 30초 이상 손을 씻어주세요.
-        또한 전문가와의 상의 없이 효능과 부작용이 충분히 밝혀지지 않은 한약이나 민간요법, 건강보조식품 등을 섭취하게 되면 대사 과정에서 간세포가 더욱 손상되거나 부작용이 발생할 수 있으므로 주의가 필요해요
-      </p>
-      <hr>
-    </div>
+  <div class=" all">
+      <nav>
+        <h1>NAVbar</h1>
+        <h1>-----------------</h1>
+      </nav>
+      <div class="container" >
+        <div class="card">
+            <div class="row back"  style="padding: 10px;">
+              <div class="col-sm-8 bg-img-cover">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/glaLxEEftHM?start=131" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-4 p-5 main" >
+                  <h1 class="site-h mb-4  text-center">A형 간염</h1>
+
+                  <div id= "info"class="contents">
+                    <h2 class="site-h1" id="info1">A형 간염의 식사요법</h2>
+                    <p>
+                      A형 간염은 바이러스에 의해 간에 염증이 발생하는 질환으로, 주로 간염 바이러스에 오염된 흙이나 물, 해산물을 통해 감염되거나 감염자의 대변을 통해 감염이 돼요. A형 간염의 증상으로 발열, 두통, 피로감, 식욕저하, 황달 등이 나타나는데 이 때 충분한 칼로리와 단백질을 공급하여 손상된 간세포 재생을 돕고 영양상태를 양호하게 유지하면 간기능 회복에 도움을 줄 수 있어요.
+                      <br>
+                      <strong>• 첫번째, 빠른 회복을 위해 충분한 칼로리 섭취가 필요해요.</strong><br>
+                      이를 위해 당질과 지방을 통해 칼로리 섭취를 늘려요. 흰죽만 먹기보다는 조리 시 참기름, 들기름 등을 충분히 사용한 영양죽을 섭취하거나, 시럽이나 버터를 바른 빵이나 감자 등의 간식 횟수를 늘려 고칼로리를 충분히 섭취하도록 해요.
+                      <br>
+                      <strong>• 두번째, 간세포 재생을 위해 단백질을 충분히 섭취해요.</strong><br>
+                      고기, 생선, 계란, 두부 등의 단백질 음식을 매끼 섭취하고, 식사로 섭취가 부족한 경우 삶은 계란 등으로 보충해 주세요.
+                      <br>
+                      <strong>• 세번째, 식사량이 적을 경우 소화되기 쉬운 음식을 소량씩 자주 섭취해요.</strong>
+                      식욕 저하와 구토 등의 증상으로 음식을 많이 먹지 못할 경우, 칼로리 섭취가 부족할 수 있어요. 소화가 용이한 스프, 영양죽, 과일 주스 등의 간식을 소량씩 자주 섭취해 주세요. 더불어 조리 시 참기름, 깨, 식초 등 양념을 충분히 사용해서 식욕을 돋우어 보세요. 이러한 노력에도 섭취량을 늘리기가 힘들다면 영양사와 상의하여 알맞은 환자용식품을 통해 영양을 보충하는 방법도 있어요.
+                      <br>
+                    <strong>• 네번째, 비타민, 무기질 공급을 위해 신선한 채소와 과일을 충분히 섭취하고 하루 1-2회 유제품을 간식으로 섭취해요.</strong>
+                      A형 간염을 예방하기 위해서 다음과 같은 위생관리가 권장돼요.
+                      해산물 등의 음식은 85℃ 이상 열에서 1분 이상 가열하여 먹고, 물은 끓여서 마시는게 좋아요. 그리고 대변을 통해 감염될 수 있으니 화장실을 다녀온 후, 요리 전, 식사 전에는 물과 비누로 30초 이상 손을 씻어주세요.
+                      또한 전문가와의 상의 없이 효능과 부작용이 충분히 밝혀지지 않은 한약이나 민간요법, 건강보조식품 등을 섭취하게 되면 대사 과정에서 간세포가 더욱 손상되거나 부작용이 발생할 수 있으므로 주의가 필요해요
+                    </p>
+                    </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+      <footer>
+        <h1>-----------------</h1>
+        <h1>footer</h1>
+      </footer>
+
   </div>
+
+
+
 </body>
-<footer>
-  <h1>-----------------</h1>
-  <h1>footer</h1>
-</footer>
 </html>

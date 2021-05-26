@@ -24,6 +24,27 @@
 
       }
     </script>
+
+    <style media="screen">
+
+      body{
+        position: relative;
+      }
+      body::before{
+          content: "";
+          background: url('image/disease_back.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          opacity: 0.3;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          z-index: -1;
+      }
+    </style>
   </head>
 
   <body>
@@ -31,7 +52,7 @@
     <div class="container">
       <div class="wrap-login ">
           <div class="text-center form1">
-                <h1 >FIND_ID</h1>
+                <h1 class="site-h">FIND_ID</h1>
                 <form class="form-group">
                   <div class="form-group">
                     <input class="form-control " type="text" name="" value="" id="received_nm"placeholder="NAME" required>

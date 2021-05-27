@@ -16,13 +16,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- JQuery & javascript component-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+
     <!-- jquery component -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
     <title></title>
 
     <!-- css component -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- js component -->
     <script src="../javascript/jquery.js"></script>
 
@@ -42,12 +47,15 @@
 
       <div class="menu-inner">
         <ul>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">질병</a></li>
+          <li><a href="#">운동</a></li>
+          <li>-<a href="#"></a></li>
+          <li>-<a href="#"></a></li>
+          <li><a href="#">식단</a></li>
+          <li>-<a href="#"></a></li>
+          <li>-<a href="#"></a></li>
         </ul>
       </div>
     </div>
@@ -55,70 +63,67 @@
 
     <!-- ======= Header ======= -->
     <header id="header">
-      <div class="container">
-
-        <h1><a href="main.html">Ssac Care</a></h1>
-
+      <div class="container back">
+        <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+        <p style="color:#6FBB66;">health care supporter</p>
       </div>
-
     </header>
 
     <!-- Home section-->
     <home id="home">
-
-      <div class="row">
-
         <!-- 설명을 carousel방식으로 display -->
-          <div id="myCarousel" class="carousel slide text-center container-fluid" style="width=100%" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
+          <div id="myCarousel" class="carousel slide text-center container-fluid" data-ride="carousel">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active">
-                <img src="image/img_01.png" alt="img_01">
+                <img id="inner" src="../img/img_01.png" alt="img_01">
               </div>
               <div class="item">
-                <img src="image/img_02.png" alt="img_02">
+                <img id="inner" src="../img/img_02.png" alt="img_02">
               </div>
               <div class="item">
-                <img src="image/img_03.png" alt="img_03">
+                <img id="inner" src="../img/img_03.png" alt="img_03">
               </div>
             </div>
 
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
-            </a>
+            </button>
           </div>
-      </div>
 
     </home>
 
     <!-- body_interface -->
     <jbody id="body">
-      <div style="position: relative;" class="container-fluid">
-        <img src="img/human_03.jpg" alt="body" width=100%>
-
-
+      <div id="jbody"style="position: relative;" class="container-fluid">
+        <img class="wbody img-responsive" src="../img/human_03.jpg" alt="body" width=100% usemap="#wbody">
+          <map id="wbody" name="wbody">
+            <area shape="rect" alt="복부" title="" coords="146,145,363,251" href="https://www.naver.com" target=" _self" onmousemove="msgposit()" onmouseout="msghide()"onmouseover="textup('복부 운동',0)"/>
+            <area shape="rect" alt="허벅지" title="" coords="197,261,313,323" href="https://www.daum.net" target="_self" onmousemove="msgposit()" onmouseout="msghide()"onmouseover="textup('허벅지 운동',0)"/>
+            <area shape="rect" alt="종아리" title="" coords="182,367,330,494" href="https://www.google.com" target="_self" onmousemove="msgposit()" onmouseout="msghide()"onmouseover="textup('종아리 운동',0)" />
+          </map>
       </div>
     </jbody>
 
     <!-- footer section -->
     <footer id="footer">
 
-      <div class="container">
-        <h1>footer</h1>
+      <div id="jfooter">
+        <p class="footer_address" >
+          충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+          <br>
+          | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+        </p>
+        <p class="footer_copy">
+          Copyright (c) 2021 Ssac Care All Rights Reserved.
+        </p>
       </div>
 
     </footer>

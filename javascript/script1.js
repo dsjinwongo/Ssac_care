@@ -67,3 +67,57 @@ function pageTransition(nodeList) {
         )
     })
 }
+
+function filter(){
+
+  var value, name, item, i;
+
+  value = document.getElementById("value").value.toUpperCase();
+  item = document.getElementsByClassName("thumbnail");
+
+  for(i=0;i<item.length;i++){
+    name = item[i].getElementsByClassName("name");
+    if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+      item[i].style.display = "flex";
+    }else{
+      item[i].style.display = "none";
+    }
+  }
+}
+
+$(function(){
+
+    var embed = $('.youtube');
+    $('.video').append(embed);
+
+    /* click 'PLAY'  button */
+    $('.pop_open').click( function() {
+      // show popup background
+      $('.gray_mask').show();
+      // show popup
+      $('#popup').show();
+      // append youtube iframe on popup
+      $('.video').append(embed);
+    });
+
+  /* click 'CLOSE' button */
+  $('.gray_mask, .close').click( function() {
+    // hide popup background
+    $('#popup').hide();
+    // hide popup
+    $('.gray_mask').hide();
+    // empty youtube iframe on popup
+    $('.video').empty();
+  });
+
+  /* click 'popu background' */
+  $('.gray_mask, .close').click( function() {
+    // hide popup background
+    $('#popup').hide();
+    // hide popup
+    $('.gray_mask').hide();
+    // empty youtube iframe on popup
+    $('.video').empty();
+  });
+
+});

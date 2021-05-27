@@ -2,14 +2,28 @@
 <html>
 <head>
   <title>workout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/style1.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../javascript/script1.js"></script>
-  <style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/diet.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../javascript/script1.js"></script>
+  <style media="screen">
+  .all::before{
+      content: "";
+      background: url('image/health_back.jpg');
+      background-size: cover;
+      opacity: 0.2;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+  }
+
   .filterDiv {
   float: left;
   text-align: center;
@@ -43,83 +57,99 @@
     margin: 10px;
   }
 
-  .thumbnail p{
-    margin-top: 5px;
-    color:black;
-  }
-
   .thumbnail img{
     width: 250px;
     height: 300px;
   }
 
-  hr{
-    background-color: black;
-    height: 1px;
+  .name {
+    display: block;
   }
   </style>
 </head>
-<body>
+<body class="all">
   <nav>
     <h1>NAVbar</h1>
     <h1>-----------------</h1>
   </nav>
-  <div class="topnav">
-    <input type="text" id="Search" onkeyup="search()" placeholder="질환명을 입력하세요">
-    <input type="submit">
-    <span class="glyphicon glyphicon-search"></span>
-  </div>
-  <br style="clear:both;">
-  <br>
-  <div class="dropdown">
-    <button class="dropbtn">다이어트식단</button>
-    <div class="dropdown-content">
-      <button class="btn" onclick="filterSelection('all')"> 모두</button>
-      <button class="btn" onclick="filterSelection('diet')"> 다이어트</button>
-      <button class="btn" onclick="filterSelection('bulkup')"> 체중&근육량 증량</button>
+  <div class="back">
+    <div id="dietforhealthCarousel" class="container-fluid carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#dietforhealthCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#dietforhealthCarousel" data-slide-to="1"></li>
+        <li data-target="#dietforhealthCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="d-block w-100" src="image/dietforhealth_1.jpg" alt="First slide">
+        </div>
+        <div class="item">
+          <img class="d-block w-100" src="image/dietforhealth_2.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+          <img class="d-block w-100" src="image/dietforhealth_3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#dietforhealthCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#dietforhealthCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </div>
-  <br>
-  <div class="weight">
+    <br style="clear:both;">
+    <div class="dropdown">
+      <button class="dropbtn">다이어트식단</button>
+      <div class="dropdown-content">
+        <button class="btn" onclick="filterSelection('all')"> 모두</button>
+        <button class="btn" onclick="filterSelection('diet')"> 다이어트</button>
+        <button class="btn" onclick="filterSelection('bulkup')"> 체중&근육량 증량</button>
+      </div>
+    </div>
     <br>
-    <h1>목적별 식단</h1>
-    <hr>
-    <div class="container-fluid text-center">
-      <div class="thumbnail filterDiv diet">
-        <iframe src="https://www.youtube.com/embed/GbwpAN_AYM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p><strong>1</strong></p>
-      </div>
-      <div class="thumbnail filterDiv diet">
-        <iframe src="https://www.youtube.com/embed/MIB5tKaLTxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p><strong>2</strong></p>
-      </div>
-      <div class="thumbnail filterDiv diet">
-        <iframe src="https://www.youtube.com/embed/GuPC1qy17DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p><strong>3</strong></p>
-      </div>
-      <div class="thumbnail filterDiv diet">
-      <iframe src="https://www.youtube.com/embed/4c6DegQ4198" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p><strong>4</strong></p>
-      </div>
-      <div class="thumbnail filterDiv diet">
-        <iframe src="https://www.youtube.com/embed/ctjwWMOysFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p><strong>5</strong></p>
+    <div class="weight">
+      <br>
+      <h1>목적별 식단</h1>
+      <hr>
+      <div class="container-fluid text-center">
+        <div class="thumbnail filterDiv diet">
+          <iframe src="https://www.youtube.com/embed/GbwpAN_AYM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class="name"><strong>1</strong></span>
+        </div>
+        <div class="thumbnail filterDiv diet">
+          <iframe src="https://www.youtube.com/embed/MIB5tKaLTxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p><strong>2</strong></p>
+        </div>
+        <div class="thumbnail filterDiv diet">
+          <iframe src="https://www.youtube.com/embed/GuPC1qy17DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p><strong>3</strong></p>
+        </div>
+        <div class="thumbnail filterDiv diet">
+        <iframe src="https://www.youtube.com/embed/4c6DegQ4198" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p><strong>4</strong></p>
+        </div>
+        <div class="thumbnail filterDiv diet">
+          <iframe src="https://www.youtube.com/embed/ctjwWMOysFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p><strong>5</strong></p>
+        </div>
       </div>
     </div>
   </div>
-  <script>
-    filterSelection("all")
+    <script>
+      filterSelection("all")
 
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-      }
-  </script>
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+        }
+    </script>
 </body>
 <footer>
   <h1>-----------------</h1>

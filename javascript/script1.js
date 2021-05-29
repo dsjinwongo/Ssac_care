@@ -48,6 +48,7 @@ function search() {
   }
 }
 
+
 function pageTransition(nodeList) {
     nodeList.forEach(a => {
         const href = a.getAttribute("href");
@@ -85,6 +86,9 @@ function filter(){
   }
 }
 
+
+//유튜브 팝업창 _
+//유튜브 팝업창 _
 $(function(){
 
     var embed = $('.youtube');

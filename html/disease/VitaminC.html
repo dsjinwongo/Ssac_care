@@ -1,53 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>workout</title>
+  <title>Atopic_dematitis</title>
     <meta charset="utf-8">
+    <link href="../../css/disease.css" rel="stylesheet" type="text/css">
+    <link href="../../css/menu_head.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style1.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script1.js"></script>
-  <style>
+    <!-- JQuery & javascript component-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
 
-  </style>
+    <!-- jquery component -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../../javascript/script1.js"></script>
+    <script src="../../javascript/jquery.js"></script>
+
+
+
+    <style media="screen">
+
+    .first{
+      position: fixed;
+      height: 40px;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: url('../image/disease_back(1).png');
+      background-size: cover;
+      z-index: 2;
+    }
+    .last{
+      position: fixed;
+      height: 40px;
+      background: url('../image/disease_back(1).png');
+      background-size: cover;
+      z-index: 2;
+      background-position: bottom;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .r_back{
+      width :90%;
+      margin-right : 5%;
+      background-color: white;
+    }
+      #header{
+        margin-top: 40px;
+      }
+    </style>
 </head>
 <body>
-  <nav>
-    <h1>NAVbar</h1>
-    <h1>-----------------</h1>
-  </nav>
-  <div>
-    <br>
-    <h1>질환별 식단</h1>
-    <hr>
-    <div class="container-fluid text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cI40-Jg-5YA?start=106" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <hr>
-      <h2>비타민 C(아스코르빈산)란?</h2>
-      <p>
-        비타민 C는 수용성 비타민 중 하나로 우리 몸에 유해한 활성산소를 막아주는 항산화제 역할을 하며, 콜라겐, 신경전달물질, 카르니틴*의 생성 및 철분 흡수를 도와요.
-        일반인 기준 우리나라 하루 권장량은 성인 남녀 100mg 이예요. 식품을 통해서 하루 중간 크기의 딸기 7개나 레몬 1개 또는 귤 2~3개를 섭취하면 하루 권장량을 충족할 수 있어요. 영양 필요량이 증가하는 임산부와 수유부에게 각각 10mg, 40mg를 추가로 섭취하도록 권장해요. 흡연은 산화적 스트레스의 원인이 되므로 흡연자인 경우 하루 35mg의 추가 섭취가 도움이 될 수 있어요.
-      </p>
-      <hr>
-      <h2>비타민 C의 결핍</h2>
-      <p>
-        비타민 C는 결핍 시 전신 피로, 식욕부진, 우울증, 잇몸이 붓거나 출혈이 생기고, 장기간 부족하면 괴혈병*이 나타난다고 알려져 있어요.
-      </p>
-      <hr>
-      <h2>비타민 C의 급원 식품</h2>
-      <p>
-        비타민 C는 밀감, 레몬, 오렌지 등의 감귤류, 키위, 망고 등의 과일과 과일주스 및 풋고추, 시금치, 양배추, 피망, 콜리플라워, 브로콜리, 케일 등의 녹색 채소류와 토마토, 감자 등에 풍부해요.
-        충분한 섭취를 위해 하루 5회 이상 다양한 과일과 채소를 먹도록 권장해요.
-        식품 중의 비타민C는 산소, 수분, 열 등과 만나면 손실되기 쉬워요. 과일과 채소는 신선한 것으로 구입하고, 장기간 공기에 노출되지 않도록 해요. 조리할 때는 물에 오래 담가 두거나 장시간 가열하지 않도록 하고 신선한 것으로 섭취하면 좋아요.
-        비타민 C는 콩팥(요로) 결석이 있거나 철의 흡수가 증가되는 혈색소침착증이 있는 경우 과잉 섭취를 피해야 해요. 과잉 섭취 시 일반적으로 오심, 구토, 복부팽만, 복통, 설사 등 위장관 증상이 나타나요. 대부분 과잉 증상은 과일과 채소를 통해서 보다는 약물이나 보충제의 형태로 과량 섭취할 때 나타나며, 하루 2,000mg 이상 섭취하지 않도록 주의해요.
-      </p>
-    </div>
+  <div class="first">
   </div>
+  <div class=" all">
+
+        <div id="menu">
+
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="menu-inner">
+            <ul>
+              <li><a href="../login.html">로그인</a></li>
+              <li><a href="../signup.html">회원가입</a></li>
+              <li><a href="../dietfordisease.html">질병</a></li>
+              <li><a href="../workout.html">운동</a></li>
+              <li>-<a href="#"></a></li>
+              <li>-<a href="#"></a></li>
+              <li><a href="../dietforhealth.html">식단</a></li>
+              <li>-<a href="#"></a></li>
+              <li>-<a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- menu section close-->
+
+        <!-- ======= Header ======= -->
+        <header id="header" style="positon : fixed">
+          <div class="container h_back">
+            <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+            <p style="color:#6FBB66;">health care supporter</p>
+          </div>
+        </header>
+      <div class="container r_back" >
+        <div class="card">
+            <div class="row back"  style="padding: 10px;">
+              <div class="col-sm-8 bg-img-cover">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cI40-Jg-5YA?start=106" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-4 p-5 main" >
+                  <h1 class="site-h mb-4  text-center">비타민 C(아스코르빈산)</h1>
+                  <div class="list">
+                    <a href="#info1"><button type="button" class="btn btn-secondary">비타민 C(아스코르빈산)</button></a>
+                    <a href="#info2"><button type="button" class="btn btn-secondary">결핍</button></a>
+                    <a href="#info3"><button type="button" class="btn btn-secondary">급원 식품</button></a>
+                  </div>
+                  <div id= "info"class="contents">
+                    <h2 class="site-h1" id="info1">비타민 C(아스코르빈산)란?</h2>
+                    <p>
+                      비타민 C는 수용성 비타민 중 하나로 우리 몸에 유해한 활성산소를 막아주는 항산화제 역할을 하며, 콜라겐, 신경전달물질, 카르니틴*의 생성 및 철분 흡수를 도와요.
+                      일반인 기준 우리나라 하루 권장량은 성인 남녀 100mg 이예요. 식품을 통해서 하루 중간 크기의 딸기 7개나 레몬 1개 또는 귤 2~3개를 섭취하면 하루 권장량을 충족할 수 있어요. 영양 필요량이 증가하는 임산부와 수유부에게 각각 10mg, 40mg를 추가로 섭취하도록 권장해요. 흡연은 산화적 스트레스의 원인이 되므로 흡연자인 경우 하루 35mg의 추가 섭취가 도움이 될 수 있어요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info2">비타민 C의 결핍</h2>
+                    <p>
+                      비타민 C는 결핍 시 전신 피로, 식욕부진, 우울증, 잇몸이 붓거나 출혈이 생기고, 장기간 부족하면 괴혈병*이 나타난다고 알려져 있어요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info3">비타민 C의 급원 식품</h2>
+                    <p>
+                      비타민 C는 밀감, 레몬, 오렌지 등의 감귤류, 키위, 망고 등의 과일과 과일주스 및 풋고추, 시금치, 양배추, 피망, 콜리플라워, 브로콜리, 케일 등의 녹색 채소류와 토마토, 감자 등에 풍부해요.
+                      충분한 섭취를 위해 하루 5회 이상 다양한 과일과 채소를 먹도록 권장해요.
+                      식품 중의 비타민C는 산소, 수분, 열 등과 만나면 손실되기 쉬워요. 과일과 채소는 신선한 것으로 구입하고, 장기간 공기에 노출되지 않도록 해요. 조리할 때는 물에 오래 담가 두거나 장시간 가열하지 않도록 하고 신선한 것으로 섭취하면 좋아요.
+                      비타민 C는 콩팥(요로) 결석이 있거나 철의 흡수가 증가되는 혈색소침착증이 있는 경우 과잉 섭취를 피해야 해요. 과잉 섭취 시 일반적으로 오심, 구토, 복부팽만, 복통, 설사 등 위장관 증상이 나타나요. 대부분 과잉 증상은 과일과 채소를 통해서 보다는 약물이나 보충제의 형태로 과량 섭취할 때 나타나며, 하루 2,000mg 이상 섭취하지 않도록 주의해요.
+                    </p>
+                    </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+      <footer id="footer">
+
+        <div id="jfooter">
+          <p class="footer_address" >
+            충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+            <br>
+            | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+          </p>
+          <p class="footer_copy">
+            Copyright (c) 2021 Ssac Care All Rights Reserved.
+          </p>
+        </div>
+
+      </footer>
+
+  </div>
+  <div class="last">
+  </div>
+
 </body>
-<footer>
-  <h1>-----------------</h1>
-  <h1>footer</h1>
-</footer>
 </html>

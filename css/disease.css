@@ -2,9 +2,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  opacity: 0;
   border-radius: 0.35rem;
-  border: 1px solid grey;
   margin : 10px;
   border-radius: 0.35rem;
   opacity: 1;
@@ -25,11 +23,11 @@ iframe{
 }
 .main{
   margin : auto auto;
+  padding: auto auto;
   width : 516px;
   height: 500px;
   min-width: 516px;
   border-radius: 0.35rem;
-  background-color: white;
 }
 .site-h{
   font-size: 30px;
@@ -84,6 +82,7 @@ a{
 }
 button:hover{
   background-color: grey;
+  color : white;
 }
 a:hover{
   color:white;

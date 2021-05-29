@@ -1,54 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>workout</title>
+  <title>Atopic_dematitis</title>
     <meta charset="utf-8">
+    <link href="../../css/disease.css" rel="stylesheet" type="text/css">
+    <link href="../../css/menu_head.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style1.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script1.js"></script>
-  <style>
+    <!-- JQuery & javascript component-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+    <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
 
-  </style>
+    <!-- jquery component -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="../../javascript/script1.js"></script>
+    <script src="../../javascript/jquery.js"></script>
+
+
+
+    <style media="screen">
+
+    .first{
+      position: fixed;
+      height: 40px;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: url('../image/disease_back(1).png');
+      background-size: cover;
+      z-index: 2;
+    }
+    .last{
+      position: fixed;
+      height: 40px;
+      background: url('../image/disease_back(1).png');
+      background-size: cover;
+      z-index: 2;
+      background-position: bottom;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .r_back{
+      width :90%;
+      margin-right : 5%;
+      background-color: white;
+    }
+      #header{
+        margin-top: 40px;
+      }
+    </style>
 </head>
 <body>
-  <nav>
-    <h1>NAVbar</h1>
-    <h1>-----------------</h1>
-  </nav>
-  <div>
-    <br>
-    <h1>질환별 식단</h1>
-    <hr>
-    <div class="container-fluid text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cI40-Jg-5YA?start=47" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <hr>
-      <h2>비타민 A란?</h2>
-      <p>
-        비타민 A는 어두운 곳에서 시각을 유지하는 데에 필요하고, 상피세포*를 정상으로 보호하면서 피부나 점막의 면역기능을 유지해주는 역할을 해요. 따라서, 비타민A가 부족해지면 주로 눈이나 상피조직에 증상이 나타나요. 흔한 증상으로는 야맹증과 안구건조증이 있어요. 또한 피부가 건조해지고 까칠해지거나 코를 통해 먼지와 세균을 잘 걸러내지 못해 감기에 쉽게 걸릴 수 있어요.
-      </p>
-      <hr>
-      <h2>비타민 A의 결핍</h2>
-      <p>
-        비타민 A는 지용성 비타민이므로 만성 설사, 만성 소화 장애, 췌장 기능 이상 등 지방의 소화∙흡수 기능이 손상되는 질환이 있을 때 결핍될 수 있어요. 또한 우리 몸에서 비타민 A의 주요 저장소는 간이기 때문에 간질환이나 만성 알코올 중독인 경우에도 비타민 A가 부족할 수 있어요.
-      </p>
-      <hr>
-      <h2>비타민 A 결핍의 예방과 치료</h2>
-      <p>
-        비타민A 결핍증을 예방하고 치료하기 위해서는 전문가와 상의를 통해서 비타민A 결핍증의 원인이 되는 질환을 치료하고 비타민A가 다량 함유된 식품을 섭취해요. 비타민 A는 동물(소, 돼지, 닭)의 간, 지방이 많은 생선, 달걀노른자, 우유와 유제품 등에 풍부해요. 그러나 비타민A는 지용성 성분이므로 저지방 유제품이나 탈지유로 만든 유제품에는 비타민A 함량이 적어요. 당근, 단호박, 엽채류, 살구, 귤, 김 등에는 체내에서 비타민A로 바뀔 수 있는 카로티노이드가 풍부해요. 식사 중의 비타민A는 지방과 함께 흡수되므로 지용성인 식물성 기름과 함께 볶아서 조리하면 흡수율이 높아져요.
-      </p>
-      <hr>
-      <h2>주의사항</h2>
-      <p>
-        비타민A를 과잉 섭취하면 독성이 나타날 수 있어서 적당량 섭취해야 해요. 비타민 A 독성은 비교적 드물지만, 급성 증상으로는 오심, 현기증, 무력감, 가려움증 등이 있고, 만성 증상으로는 두통, 탈모증, 피부 건조, 뼈관절 통증 등을 유발할 수 있어요. 우리나라 하루 비타민A 권장량은 남자의 경우 750~800㎍ RAE*, 여자는 600~650㎍ RAE이에요. 임신부와 수유부는 각각 하루에 70㎍ RAE, 490㎍ RAE을 추가로 섭취할 것을 권장하고 있어요.
-      </p>
-    </div>
+  <div class="first">
   </div>
+  <div class=" all">
+
+        <div id="menu">
+
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <div class="menu-inner">
+            <ul>
+              <li><a href="../login.html">로그인</a></li>
+              <li><a href="../signup.html">회원가입</a></li>
+              <li><a href="../dietfordisease.html">질병</a></li>
+              <li><a href="../workout.html">운동</a></li>
+              <li>-<a href="#"></a></li>
+              <li>-<a href="#"></a></li>
+              <li><a href="../dietforhealth.html">식단</a></li>
+              <li>-<a href="#"></a></li>
+              <li>-<a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- menu section close-->
+
+        <!-- ======= Header ======= -->
+        <header id="header" style="positon : fixed">
+          <div class="container h_back">
+            <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+            <p style="color:#6FBB66;">health care supporter</p>
+          </div>
+        </header>
+      <div class="container r_back" >
+        <div class="card">
+            <div class="row back"  style="padding: 10px;">
+              <div class="col-sm-8 bg-img-cover">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cI40-Jg-5YA?start=47" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-4 p-5 main" >
+                  <h1 class="site-h mb-4  text-center">비타민 A</h1>
+                  <div class="list">
+                    <a href="#info1"><button type="button" class="btn btn-secondary">비타민 A</button></a>
+                    <a href="#info2"><button type="button" class="btn btn-secondary">비타민 A의 결핍</button></a>
+                    <a href="#info3"><button type="button" class="btn btn-secondary">예방과 치료</button></a>
+                    <a href="#info4"><button type="button" class="btn btn-secondary">주의사항</button></a>
+                  </div>
+                  <div id= "info"class="contents">
+                    <h2 class="site-h1" id="info1">비타민 A란?</h2>
+                    <p>
+                      비타민 A는 어두운 곳에서 시각을 유지하는 데에 필요하고, 상피세포*를 정상으로 보호하면서 피부나 점막의 면역기능을 유지해주는 역할을 해요. 따라서, 비타민A가 부족해지면 주로 눈이나 상피조직에 증상이 나타나요. 흔한 증상으로는 야맹증과 안구건조증이 있어요. 또한 피부가 건조해지고 까칠해지거나 코를 통해 먼지와 세균을 잘 걸러내지 못해 감기에 쉽게 걸릴 수 있어요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info2">비타민 A의 결핍</h2>
+                    <p>
+                      비타민 A는 지용성 비타민이므로 만성 설사, 만성 소화 장애, 췌장 기능 이상 등 지방의 소화∙흡수 기능이 손상되는 질환이 있을 때 결핍될 수 있어요. 또한 우리 몸에서 비타민 A의 주요 저장소는 간이기 때문에 간질환이나 만성 알코올 중독인 경우에도 비타민 A가 부족할 수 있어요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info3">비타민 A 결핍의 예방과 치료</h2>
+                    <p>
+                      비타민A 결핍증을 예방하고 치료하기 위해서는 전문가와 상의를 통해서 비타민A 결핍증의 원인이 되는 질환을 치료하고 비타민A가 다량 함유된 식품을 섭취해요. 비타민 A는 동물(소, 돼지, 닭)의 간, 지방이 많은 생선, 달걀노른자, 우유와 유제품 등에 풍부해요. 그러나 비타민A는 지용성 성분이므로 저지방 유제품이나 탈지유로 만든 유제품에는 비타민A 함량이 적어요. 당근, 단호박, 엽채류, 살구, 귤, 김 등에는 체내에서 비타민A로 바뀔 수 있는 카로티노이드가 풍부해요. 식사 중의 비타민A는 지방과 함께 흡수되므로 지용성인 식물성 기름과 함께 볶아서 조리하면 흡수율이 높아져요.
+                    </p>
+                    <hr>
+                    <h2 class="site-h1" id="info4">주의사항</h2>
+                    <p>
+                      비타민A를 과잉 섭취하면 독성이 나타날 수 있어서 적당량 섭취해야 해요. 비타민 A 독성은 비교적 드물지만, 급성 증상으로는 오심, 현기증, 무력감, 가려움증 등이 있고, 만성 증상으로는 두통, 탈모증, 피부 건조, 뼈관절 통증 등을 유발할 수 있어요. 우리나라 하루 비타민A 권장량은 남자의 경우 750~800㎍ RAE*, 여자는 600~650㎍ RAE이에요. 임신부와 수유부는 각각 하루에 70㎍ RAE, 490㎍ RAE을 추가로 섭취할 것을 권장하고 있어요.
+                    </p>
+                    </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+      <footer id="footer">
+
+        <div id="jfooter">
+          <p class="footer_address" >
+            충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+            <br>
+            | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+          </p>
+          <p class="footer_copy">
+            Copyright (c) 2021 Ssac Care All Rights Reserved.
+          </p>
+        </div>
+
+      </footer>
+
+  </div>
+  <div class="last">
+  </div>
+
 </body>
-<footer>
-  <h1>-----------------</h1>
-  <h1>footer</h1>
-</footer>
 </html>

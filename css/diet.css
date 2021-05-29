@@ -70,29 +70,6 @@
   cursor: pointer;
 }
 
-.topnav input[type=text] {
-  float: left;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-  display: block;
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-  .topnav input[type=text] {
-    float: none;
-    text-align: left;
-    left: 35%;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-
   #myBtnContainer{
     clear: both;
   }

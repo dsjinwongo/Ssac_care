@@ -1,3 +1,6 @@
+.all{
+  position: relative;
+}
 
 body, html {
       margin: 0;

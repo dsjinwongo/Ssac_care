@@ -55,7 +55,7 @@
       bottom: 0;
     }
 
-    ul {
+    #menu ul {
       padding: 0;
       list-style: none;
       width: 80%;
@@ -64,7 +64,7 @@
       top: 10px;
     }
 
-    ul li {
+    #menu ul li {
       color: #fff;
       padding: 20px 0;
     }

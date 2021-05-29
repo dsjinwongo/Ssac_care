@@ -22,11 +22,40 @@
   <script type="text/javascript" src="../javascript/script1.js"></script>
 
   <style media="screen">
+
+/*
+  .first{
+    position: fixed;
+    height: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url('image/health_back(1).png');
+    background-size: cover;
+    z-index: 2;
+  }
+  .last{
+    position: fixed;
+    height: 40px;
+    background: url('image/health_back(1).png');
+    background-size: cover;
+    z-index: 2;
+    background-position: bottom;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  } */
+  .all{
+    padding-top : 5px;
+    padding-bottom : 5px;
+  }
   .all::before{
       content: "";
-      background: url('image/health_back.jpg');
+      background: url('image/disease_back.jpg');
       background-size: cover;
-      opacity: 0.2;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      opacity: 0.3;
       position: absolute;
       top: 0px;
       left: 0px;
@@ -50,7 +79,10 @@
     color : white;
     opacity: 1;
   }
-    </style>
+  #header{
+    margin-top: 40px;
+  }
+  </style>
   <script type="text/javascript">
     function create(_link) {
       document.getElementById("link").src = _link;
@@ -58,32 +90,37 @@
   </script>
 
 </head>
+
+
 <body class="all">
+
+  <div class="first">
+  </div>
   <!-- menu section -->
+  <div id="menu" style="margin-top : -5px;">
 
-  <div class="back">
-    <div id="menu">
-
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-
-      <div class="menu-inner">
-        <ul>
-          <li><a href="login.html">로그인</a></li>
-          <li><a href="signup.html">회원가입</a></li>
-          <li><a href="dietfordisease.html">질병</a></li>
-          <li><a href="workout.html">운동</a></li>
-          <li>-<a href="#"></a></li>
-          <li>-<a href="#"></a></li>
-          <li><a href="dietforhealth.html">식단</a></li>
-          <li>-<a href="#"></a></li>
-          <li>-<a href="#"></a></li>
-        </ul>
-      </div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
+
+    <div class="menu-inner">
+      <ul>
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="signup.html">회원가입</a></li>
+        <li><a href="dietfordisease.html">질병</a></li>
+        <li><a href="workout.html">운동</a></li>
+        <li>-<a href="#"></a></li>
+        <li>-<a href="#"></a></li>
+        <li><a href="dietforhealth.html">식단</a></li>
+        <li>-<a href="#"></a></li>
+        <li>-<a href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="back">
+
     <!-- menu section close-->
 
     <!-- ======= Header ======= -->
@@ -201,6 +238,11 @@
 
     </footer>
   </div>
+
+  <div class="last">
+  </div>
+
+
     <script>
       filterSelection("all")
 

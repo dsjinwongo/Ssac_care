@@ -5,14 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../css/diet.css" rel="stylesheet" type="text/css">
+  <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- JQuery & javascript component-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+
+  <!-- jquery component -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="../javascript/jquery.js"></script>
   <script type="text/javascript" src="../javascript/script1.js"></script>
   <style>
   .all::before{
       content: "";
-      background: url('image/ill_back.jpg');
+      background: url('image/disease_back.png');
       background-size: cover;
       opacity: 0.2;
       position: absolute;
@@ -60,13 +70,41 @@
     height: 300px;
   }
   </style>
+  <script type="text/javascript">
+    function create(_link) {
+      document.getElementById("link").src = _link;
+    }
+  </script>
 </head>
 <body class="all">
-  <nav>
-    <h1>NAVbar</h1>
-    <h1>-----------------</h1>
-  </nav>
   <div class="back">
+    <nav id="menu">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <div class="menu-inner">
+        <ul>
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="signup.html">회원가입</a></li>
+          <li><a href="dietfordisease.html">질병</a></li>
+          <li><a href="workout.html">운동</a></li>
+          <li>-<a href="#"></a></li>
+          <li>-<a href="#"></a></li>
+          <li><a href="dietforhealth.html">식단</a></li>
+          <li>-<a href="#"></a></li>
+          <li>-<a href="#"></a></li>
+        </ul>
+      </div>
+    </nav>
+    <header id="header">
+      <div class="container h_back">
+        <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+        <p style="color:#6FBB66;">health care supporter</p>
+      </div>
+    </header>
     <div id="dietforhealthCarousel" class="container-fluid carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#dietforhealthCarousel" data-slide-to="0" class="active"></li>
@@ -211,14 +249,22 @@
           <p><strong><a href="disease/HepatitisC.html" class="target" target="_blank">C형 간염</a></strong></p>
         </div>
       </div>
+      <footer id="footer">
+        <div id="jfooter">
+          <p class="footer_address" >
+            충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+            <br>
+            | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+          </p>
+          <p class="footer_copy">
+            Copyright (c) 2021 Ssac Care All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   </div>
   <script>
     filterSelection("all")
   </script>
 </body>
-<footer>
-  <h1>-----------------</h1>
-  <h1>footer</h1>
-</footer>
 </html>

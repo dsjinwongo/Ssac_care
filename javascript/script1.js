@@ -33,7 +33,6 @@ function RemoveClass(element, name) {
 }
 
 function filter() {
-
   var value, name, item, i;
 
   value = document.getElementById("Search").value.toUpperCase();
@@ -49,6 +48,9 @@ function filter() {
   }
 }
 
+
+//유튜브 팝업창 _
+//유튜브 팝업창 _
 $(function(){
 
     var embed = $('.youtube');

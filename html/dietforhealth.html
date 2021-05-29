@@ -5,11 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../css/diet.css" rel="stylesheet" type="text/css">
+  <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- JQuery & javascript component-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+
+  <!-- jquery component -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="../javascript/jquery.js"></script>
   <script type="text/javascript" src="../javascript/script1.js"></script>
+
   <style media="screen">
   .all::before{
       content: "";
@@ -30,49 +41,56 @@
   margin: 2px;
   display: none; /* Hidden by default */
   }
-
-  .show {
-    display: block;
+  .thumbnail{
+    opacity: 0.7;
+    color : black;
   }
-
-  .container-fluid {
-
-    overflow: hidden;
+  .thumbnail:hover{
+    background-color: grey;
+    color : white;
+    opacity: 1;
   }
+    </style>
+  <script type="text/javascript">
+    function create(_link) {
+      document.getElementById("link").src = _link;
+    }
+  </script>
 
-  .btn:hover {
-  background-color: #ddd;
-  }
-
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-
-  .glyphicon-search{
-    font-size:30px;
-  }
-
-  .thumbnail {
-    margin: 10px;
-  }
-
-  .thumbnail img{
-    width: 250px;
-    height: 300px;
-  }
-
-  .name {
-    display: block;
-  }
-  </style>
 </head>
 <body class="all">
-  <nav>
-    <h1>NAVbar</h1>
-    <h1>-----------------</h1>
-  </nav>
+  <!-- menu section -->
   <div class="back">
+    <div id="menu">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <div class="menu-inner">
+        <ul>
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="signup.html">회원가입</a></li>
+          <li><a href="dietfordisease.html">질병</a></li>
+          <li><a href="workout.html">운동</a></li>
+          <li>-<a href="#"></a></li>
+          <li>-<a href="#"></a></li>
+          <li><a href="dietforhealth.html">식단</a></li>
+          <li>-<a href="#"></a></li>
+          <li>-<a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- menu section close-->
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container h_back">
+        <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+        <p style="color:#6FBB66;">health care supporter</p>
+      </div>
+    </header>
+
     <div id="dietforhealthCarousel" class="container-fluid carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#dietforhealthCarousel" data-slide-to="0" class="active"></li>
@@ -109,50 +127,73 @@
       </div>
     </div>
     <br>
+
+
     <div class="weight">
-      <br>
-      <h1>목적별 식단</h1>
-      <hr>
-      <div class="container-fluid text-center">
-        <div class="thumbnail filterDiv diet">
-          <iframe src="https://www.youtube.com/embed/GbwpAN_AYM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <span class="name"><strong>1</strong></span>
-        </div>
-        <div class="thumbnail filterDiv diet">
-          <iframe src="https://www.youtube.com/embed/MIB5tKaLTxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p><strong>2</strong></p>
-        </div>
-        <div class="thumbnail filterDiv diet">
-          <iframe src="https://www.youtube.com/embed/GuPC1qy17DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p><strong>3</strong></p>
-        </div>
-        <div class="thumbnail filterDiv diet">
-        <iframe src="https://www.youtube.com/embed/4c6DegQ4198" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p><strong>4</strong></p>
-        </div>
-        <div class="thumbnail filterDiv diet">
-          <iframe src="https://www.youtube.com/embed/ctjwWMOysFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p><strong>5</strong></p>
+      <h1 class="site-h text-center"><strong>목적별 식단</strong></h1>
+      <div class="gray_mask"></div>
+      <div id="popup">
+          <a class="close" href="#">CLOSE</a>
+          <div class="youtube">
+            <iframe id="link"  width="560"height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+
+      <div class="container-fluid ">
+        <div class="row justify-content-center">
+
+          <div class="up">
+            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/GbwpAN_AYM4')">
+              <div class="thumbnail filterDiv chest triceps">
+                <img src="https://img.youtube.com/vi/GbwpAN_AYM4/mqdefault.jpg" alt="1">
+                <span class="name"><strong>1</strong></span>
+              </div>
+            </a>
+          </div>
+
+            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/MIB5tKaLTxo')">
+              <div class="thumbnail filterDiv chest triceps">
+                <img src="https://img.youtube.com/vi/MIB5tKaLTxo/mqdefault.jpg" alt="2">
+                <span class="name"><strong>2</strong></span>
+              </div>
+            </a>
+            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/GuPC1qy17DU')">
+              <div class="thumbnail filterDiv chest triceps">
+                <img src="https://img.youtube.com/vi/GuPC1qy17DU/mqdefault.jpg" alt="3">
+                <span class="name"><strong>3</strong></span>
+              </div>
+            </a>
+            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/4c6DegQ4198')">
+              <div class="thumbnail filterDiv chest triceps">
+                <img src="https://img.youtube.com/vi/4c6DegQ4198/mqdefault.jpg" alt="4">
+                <span class="name"><strong>4</strong></span>
+              </div>
+            </a>
+            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/ctjwWMOysFI')">
+              <div class="thumbnail filterDiv chest triceps">
+                <img src="https://img.youtube.com/vi/ctjwWMOysFI/mqdefault.jpg" alt="5">
+                <span class="name"><strong>5</strong></span>
+              </div>
+            </a>
+
         </div>
       </div>
     </div>
+    <footer id="footer">
+      <div id="jfooter">
+        <p class="footer_address" >
+          충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+          <br>
+          | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+        </p>
+        <p class="footer_copy">
+          Copyright (c) 2021 Ssac Care All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </div>
-    <script>
-      filterSelection("all")
-
-      var btnContainer = document.getElementById("myBtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-        }
-    </script>
+  <script>
+    filterSelection("all")
+  </script>
 </body>
-<footer>
-  <h1>-----------------</h1>
-  <h1>footer</h1>
-</footer>
 </html>

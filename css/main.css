@@ -1,3 +1,12 @@
+.all{
+  position: relative;
+}
+
+.all_back{
+  background-color: white;
+  margin-top:40px;
+  margin-bottom:40px;
+}
 
 body, html {
       margin: 0;

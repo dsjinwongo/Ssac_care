@@ -23,65 +23,24 @@
 
   <style media="screen">
 
-/*
-  .first{
-    position: fixed;
-    height: 40px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: url('image/health_back(1).png');
-    background-size: cover;
-    z-index: 2;
-  }
-  .last{
-    position: fixed;
-    height: 40px;
-    background: url('image/health_back(1).png');
-    background-size: cover;
-    z-index: 2;
-    background-position: bottom;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  } */
-  .all{
-    padding-top : 5px;
-    padding-bottom : 5px;
-  }
-  .all::before{
-      content: "";
-      background: url('image/disease_back.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      opacity: 0.3;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      z-index: -1;
-  }
+    .all{
+      padding-top : 5px;
+      padding-bottom : 5px;
+    }
+    .all::before{
+        content: "";
+        background: url('image/disease_back.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+    }
 
-  .filterDiv {
-  float: left;
-  text-align: center;
-  margin: 2px;
-  display: none; /* Hidden by default */
-  }
-  .thumbnail{
-    opacity: 0.7;
-    color : black;
-  }
-  .thumbnail:hover{
-    background-color: grey;
-    color : white;
-    opacity: 1;
-  }
-  #header{
-    margin-top: 40px;
-  }
   </style>
   <script type="text/javascript">
     function create(_link) {
@@ -94,10 +53,8 @@
 
 <body class="all">
 
-  <div class="first">
-  </div>
   <!-- menu section -->
-  <div id="menu" style="margin-top : -5px;">
+  <div id="menu" >
 
     <div class="hamburger">
       <div class="line"></div>
@@ -119,17 +76,13 @@
       </ul>
     </div>
   </div>
+  <header id="header">
+    <div class="container h_back">
+      <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+      <p style="color:#6FBB66;">health care supporter</p>
+    </div>
+  </header>
   <div class="back">
-
-    <!-- menu section close-->
-
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="container h_back">
-        <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
-        <p style="color:#6FBB66;">health care supporter</p>
-      </div>
-    </header>
 
     <div id="dietforhealthCarousel" class="container-fluid carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -185,34 +138,33 @@
       <div class="container-fluid ">
         <div class="row justify-content-center">
 
-          <div class="up">
-            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/GbwpAN_AYM4')">
+
+            <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/GbwpAN_AYM4')">
               <div class="thumbnail filterDiv chest triceps">
                 <img src="https://img.youtube.com/vi/GbwpAN_AYM4/mqdefault.jpg" alt="1">
                 <span class="name"><strong>1</strong></span>
               </div>
             </a>
-          </div>
 
-            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/MIB5tKaLTxo')">
+            <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/MIB5tKaLTxo')">
               <div class="thumbnail filterDiv chest triceps">
                 <img src="https://img.youtube.com/vi/MIB5tKaLTxo/mqdefault.jpg" alt="2">
                 <span class="name"><strong>2</strong></span>
               </div>
             </a>
-            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/GuPC1qy17DU')">
+            <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/GuPC1qy17DU')">
               <div class="thumbnail filterDiv chest triceps">
                 <img src="https://img.youtube.com/vi/GuPC1qy17DU/mqdefault.jpg" alt="3">
                 <span class="name"><strong>3</strong></span>
               </div>
             </a>
-            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/4c6DegQ4198')">
+            <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/4c6DegQ4198')">
               <div class="thumbnail filterDiv chest triceps">
                 <img src="https://img.youtube.com/vi/4c6DegQ4198/mqdefault.jpg" alt="4">
                 <span class="name"><strong>4</strong></span>
               </div>
             </a>
-            <a class="mb-4 pop_open" href="#" onclick="create('https://www.youtube.com/embed/ctjwWMOysFI')">
+            <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/ctjwWMOysFI')">
               <div class="thumbnail filterDiv chest triceps">
                 <img src="https://img.youtube.com/vi/ctjwWMOysFI/mqdefault.jpg" alt="5">
                 <span class="name"><strong>5</strong></span>
@@ -239,8 +191,6 @@
     </footer>
   </div>
 
-  <div class="last">
-  </div>
   <script>
     filterSelection("all")
   </script>

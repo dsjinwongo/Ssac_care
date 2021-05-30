@@ -4,8 +4,8 @@
 
 .back{
   background-color: white;
-  margin-right: 60px;
-  margin-left: 5%;
+  margin-right: 15%;
+  margin-left: 10%;
   margin-bottom : 5%
   margin-top: 0;
 }
@@ -72,6 +72,13 @@
   padding: 12px 16px;
   cursor: pointer;
 }
+/*  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }  */
 
 .topnav input[type=text] {
   float: left;
@@ -104,11 +111,6 @@
     display: block;
   }
 
-  .container-fluid {
-
-    overflow: hidden;
-  }
-
   .btn:hover {
   background-color: #ddd;
   }
@@ -124,8 +126,15 @@
 
   .thumbnail {
     margin: 10px;
-  }
+    opacity: 0.8;
+    color: black;
 
+  }
+  .thumbnail:hover{
+    background-color: #ddd;
+    color : white;
+    opacity: 1;
+  }
 
   .name {
     display: block;
@@ -139,7 +148,10 @@
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.7);
+    background-size: cover;
     margin : auto auto;
+
+    z-index: 3;
   }
   .youtube{
     margin : auto auto;
@@ -150,13 +162,14 @@
     padding-left: 300px;
     padding-right: auto;
     margin : auto auto;
+    z-index: 4;
   }
   .container-fluid{
-    width : 100%;
     padding-right : 15px;
-    padding-left : 15ps;
+    padding-left : 15px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
   }
   .row{
     display: -webkit-box;

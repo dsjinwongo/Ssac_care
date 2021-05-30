@@ -144,13 +144,14 @@ home section css
 body section css
 */
 
+/*추가부분-김도염*/
 /*===body section css===*/
 #myCarousel{
   width: auto;
   height: auto;
   margin-top: 5%;
-/*  margin-left: 17%;
-  margin-right: 17%;*/
+  margin-left: 17%;
+  margin-right: 17%;
 }
 .carousel-lbt{
   position: absolute;
@@ -172,7 +173,55 @@ body section css
 .icon{
   font-size: 50px;
 }
-/*===body section css close===*/
+
+.workout{
+  margin-top: 10%;
+  margin-left: 19%;
+  margin-right: 17%;
+  margin-bottom: 10%;
+}
+
+p.title{
+  position: relative;
+  top: 10%;
+  font-size: 45px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'title';
+}
+
+p.content{
+  position: relative;
+  top: 20%;
+  font-size: 25px;
+  color: #64727B;
+  font-family: 'content';
+}
+.work_bt{
+  position: relative;
+  top: 20%;
+  font-family: 'content';
+  background-color: transparent;
+  border-color: #64727B;
+}
+.col-lg-5{
+  margin-left: auto;
+}
+.col-lg-5 a:hover{
+  background-color: #6FBB66;
+}
+@media (max-width: 992px) {
+  p.title{
+    font-size: 25px;
+  }
+
+  p.content{
+    font-size: 15px;
+  }
+}
+
+/* 추가부분-김도염*/
 
 #inner{
   align-items: center;

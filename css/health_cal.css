@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Staatliches&display=swap');
+*{
+
+  font-family: 'Do Hyeon', sans-serif;
+}
 .cal{
   background-color : white;
   padding : 0;
   height : 1000px;
+  padding-bottom: 500px;
 }
 .cals{
   margin-top : 100px;
@@ -22,9 +28,6 @@ table{
   width : 60px;
 }
 
-td{
-  padding-bottom: 10px;
-}
 input{
   margin-right : 5px;
 }
@@ -34,16 +37,10 @@ caption{
 h1{
   margin : 10px;
 }
-.col-sm-6{
-  min-width : 500px;
-  margin : auto auto;
-}
 
 .all{
   padding-top : 5px;
   padding-bottom : 5px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   z-index:-1;
 }

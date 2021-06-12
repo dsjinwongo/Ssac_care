@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>workout</title>
+  <title>Ssac care - workout</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/diet.css" rel="stylesheet" type="text/css">
     <link href="../css/workout.css" rel="stylesheet" type="text/css">
     <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
 
@@ -25,45 +24,30 @@
     <style media="screen">
 
     .all{
-      padding-top : 5px;
-      padding-bottom : 5px;
-    }
-    .all::before{
-        content: "";
-        background: url('image/disease_back.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        z-index: -1;
+      background: url('image/disease_back.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .filterDiv {
       float: left;
       text-align: center;
-      margin: 2px;
       display: none; /* Hidden by default */
     }
-
-    .show {
-      display: inline-block;
-    }
-
     .container-fluid {
       overflow: hidden;
     }
-
-    .btn:hover {
-    background-color: #ddd;
+    #header{
+      position: fixed;
+      top : 0;
+      left : 0;
+      z-index: 2;
+      width : 100%;
     }
 
-    .btn.active {
-      background-color: #666;
-      color: white;
+    #menu{
+      z-index: 3;
+      margin-top: -80px;
     }
 
   </style>
@@ -74,9 +58,8 @@
   </script>
 </head>
 <body class="all">
-  <div class="gray_mask"></div>
   <!-- menu section -->
-  <div id="menu" >
+  <div id="menu">
     <div class="hamburger">
       <div class="line"></div>
       <div class="line"></div>
@@ -85,15 +68,17 @@
 
     <div class="menu-inner">
       <ul>
+
+        <li><a href="main.html">Ssac care</a></li>
         <li><a href="login.html">로그인</a></li>
         <li><a href="signup.html">회원가입</a></li>
         <li><a href="dietfordisease.html">질병</a></li>
         <li><a href="workout.html">운동</a></li>
-        <li>-<a href="#"></a></li>
-        <li>-<a href="#"></a></li>
-        <li><a href="dietforhealth.html">식단</a></li>
-        <li>-<a href="#"></a></li>
-        <li>-<a href="#"></a></li>
+        <li><a href="dietforhealth.html">목적별 식단</a></li>
+        <li><a href="dietfordisease.html">질환별 식단</a></li>
+        <li><a href="health_cal.html">BMI & BMR 측정</a></li>
+        <li><a href="campaign.html">Campaign</a></li>
+        <li><a href="walking.html">국토대장정</a></li>
       </ul>
     </div>
   </div>
@@ -103,8 +88,10 @@
       <p style="color:#6FBB66;">health care supporter</p>
     </div>
   </header>
-
+  <div class="gray_mask">  </div>
   <div class="back">
+
+
     <!-- 식단 페이지 사진 복사 -->
     <div id="dietforhealthCarousel" class="container-fluid carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -135,7 +122,7 @@
     <!-- 일단 넣어놓음 -->
 
     <div class="dropdown">
-      <button class="dropbtn">부위별 운동</button>
+      <button class="dropbtn" style="margin :5px; background-color : grey;">부위별 운동</button>
       <div class="dropdown-content">
         <button class="btn" onclick="filterSelection('all')"> 모두</button>
         <button class="btn" onclick="filterSelection('heart')"> 심장</button>
@@ -146,11 +133,8 @@
         <button class="btn" onclick="filterSelection('cancer')"> 암</button>
       </div>
     </div>
-    <hr>
     <div class="weight">
-      <h1 class="site-h text-center"><strong>운동 목록</strong></h1>
-
-
+      <h1 class="text-center"><strong>운동 목록</strong></h1>
       <div id="popup">
           <a class="close" href="#">CLOSE</a>
           <div class="youtube">
@@ -158,51 +142,52 @@
           </div>
       </div>
 
+
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/0htUrZ8AO2g')">
+          <a class="col-md-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/0htUrZ8AO2g')">
             <div class="thumbnail filterDiv chest triceps">
               <img src="https://img.youtube.com/vi/0htUrZ8AO2g/mqdefault.jpg" alt="체어 푸쉬업">
               <p><strong>체어 푸쉬업</strong></p>
             </div>
           </a>
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/yaNVxOnhYrE')">
+          <a class="col-md-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/yaNVxOnhYrE')">
             <div class="thumbnail filterDiv chest triceps">
               <img src="https://img.youtube.com/vi/yaNVxOnhYrE/mqdefault.jpg" alt="딥스">
               <p><strong>딥스</strong></p>
             </div>
           </a>
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/doDNksSOEQc')">
+          <a class="col-md-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/doDNksSOEQc')">
             <div class="thumbnail filterDiv chest triceps">
               <img src="https://img.youtube.com/vi/doDNksSOEQc/mqdefault.jpg" alt="스플릿 런지 점프">
               <p><strong>런지</strong></p>
             </div>
           </a>
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/Km0s0Z1ixHI')">
+          <a class="col-md-4  pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/Km0s0Z1ixHI')">
             <div class="thumbnail filterDiv chest triceps">
               <img src="https://img.youtube.com/vi/Km0s0Z1ixHI/mqdefault.jpg" alt="싯업 스탠드">
               <p><strong>싯업 스탠드</strong></p>
             </div>
           </a>
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/kcAQLm0p_rk')">
+          <a class="col-md-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/kcAQLm0p_rk')">
             <div class="thumbnail filterDiv hip">
               <img src="https://img.youtube.com/vi/kcAQLm0p_rk/mqdefault.jpg" alt="힙 쓰러스트">
               <p><strong>힙 쓰러스트</strong></p>
             </div>
           </a>
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/PAtuFgk4l9g')">
+          <a class="col-md-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/PAtuFgk4l9g')">
             <div class="thumbnail filterDiv back">
               <img src="https://img.youtube.com/vi/PAtuFgk4l9g/mqdefault.jpg" alt="풀업 투 원 사이드">
               <p><strong>풀업 투 원 사이드</strong></p>
             </div>
           </a>
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/ZBw8usDsHIY')">
+          <a class="col-md-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/ZBw8usDsHIY')">
             <div class="thumbnail filterDiv chest">
               <img src="https://img.youtube.com/vi/ZBw8usDsHIY/mqdefault.jpg" alt="슬라이딩 체스트 플라이">
               <p><strong>슬라이딩 체스트 플라이</strong></p>
             </div>
           </a>
-          <a class="col-md-4 mb-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/Km0s0Z1ixHI')">
+          <a class="col-md-4 pop_open text-center" href="#" onclick="create('https://www.youtube.com/embed/Km0s0Z1ixHI')">
             <div class="thumbnail filterDiv quadriceps">
               <img src="https://img.youtube.com/vi/Km0s0Z1ixHI/mqdefault.jpg" alt="싯업 스탠드">
               <p><strong>싯업 스탠드</strong></p>
@@ -214,22 +199,22 @@
 
     </div>
 
-    <footer id="footer">
-
-      <div id="jfooter">
-        <p class="footer_address" >
-          충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
-          <br>
-          | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
-        </p>
-        <p class="footer_copy">
-          Copyright (c) 2021 Ssac Care All Rights Reserved.
-        </p>
-      </div>
-
-    </footer>
   </div>
 
+      <footer id="footer">
+
+        <div id="jfooter">
+          <p class="footer_address" >
+            충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+            <br>
+            | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+          </p>
+          <p class="footer_copy">
+            Copyright (c) 2021 Ssac Care All Rights Reserved.
+          </p>
+        </div>
+
+      </footer>
 
   <script>
     filterSelection("all")

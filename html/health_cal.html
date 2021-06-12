@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <title></title>
+    <title>Ssac care - health_cal</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,8 +31,23 @@
     } */
     .all{
       background: url('image/disease_back.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .cal{
+      background-color : white;
+      padding : 0;
+      height : 1000px;
+      padding-bottom: 1300px;
+    }
+    .col-sm-6{
+      min-width : 500px;
+      margin : auto auto;
     }
 
+    td{
+      padding-bottom: 10px;
+    }
     </style>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
    <script type="text/javascript">
@@ -201,7 +216,7 @@
 
 
         var options = {
-          title: "Feale",
+          title: "Female",
           legend:'none',
           bar: { groupWidth: '70%' },
           candlestick: {
@@ -254,15 +269,17 @@
 
       <div class="menu-inner">
         <ul>
+
+          <li><a href="main.html">Ssac care</a></li>
           <li><a href="login.html">로그인</a></li>
           <li><a href="signup.html">회원가입</a></li>
           <li><a href="dietfordisease.html">질병</a></li>
           <li><a href="workout.html">운동</a></li>
-          <li>-<a href="#"></a></li>
-          <li>-<a href="#"></a></li>
-          <li><a href="dietforhealth">식단</a></li>
-          <li>-<a href="#"></a></li>
-          <li>-<a href="#"></a></li>
+          <li><a href="dietforhealth.html">목적별 식단</a></li>
+          <li><a href="dietfordisease.html">질환별 식단</a></li>
+          <li><a href="health_cal.html">BMI & BMR 측정</a></li>
+          <li><a href="campaign.html">Campaign</a></li>
+          <li><a href="walking.html">국토대장정</a></li>
         </ul>
       </div>
     </div>
@@ -270,7 +287,7 @@
 
     <!-- ======= Header ======= -->
     <header id="header">
-      <div class="container back">
+      <div class="container c_back">
         <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
         <p style="color:#6FBB66;">health care supporter</p>
       </div>
@@ -285,14 +302,6 @@
             <div class="col-sm-6 form-group">
               <form class="bmiform form-group" method="post">
                 <table>
-                  <tr>
-                      <td colspan="2">
-                        <input type="radio" name="gender" value="male">
-                      <label>Male</label>
-                      <input type="radio" name="gender" value="female">
-                      <label>Female</label>
-                      </td>
-                  </tr>
                   <tr>
                     <td class="lab"><label>Height</label></td>
                     <td>  <input class="formtext" type="number" name="" id="hei">cm</td>
@@ -368,6 +377,18 @@
       </div>
     </div>
 
+    <footer id="footer">
+      <div id="jfooter">
+        <p class="footer_address" >
+          충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+          <br>
+          | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+        </p>
+        <p class="footer_copy">
+          Copyright (c) 2021 Ssac Care All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
   </body>
 </html>

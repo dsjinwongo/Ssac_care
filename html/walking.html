@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2019038095_이진원</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/diet.css" rel="stylesheet" type="text/css">
+  <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- JQuery & javascript component-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+
+  <!-- jquery component -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="../javascript/jquery.js"></script>
+  <script src="../javascript/map1.js"></script>
+  <script type="text/javascript" src="../javascript/script1.js"></script>
+  <style>
+  .all{
+    padding-top : 5px;
+    padding-bottom : 5px;
+  }
+  .all::before{
+      content: "";
+      background: url('image/disease_back.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+  }
+
+  .filterDiv {
+    text-align: center;
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+
+  .show {
+    display: inline-block;
+  }
+
+  .container-fluid {
+    overflow: hidden;
+  }
+
+  .btn:hover {
+  background-color: #ddd;
+  }
+
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .glyphicon-search{
+    font-size:30px;
+  }
+
+  .thumbnail {
+    margin: 10px;
+  }
+
+  .thumbnail img{
+    width: 250px;
+    height: 300px;
+  }
+  #header{
+    position: fixed;
+    top : 0;
+    left : 0;
+    z-index: 2;
+    width : 100%;
+  }
+  #menu{
+    z-index: 3;
+    margin-top: -5px;
+  }
+  .d_back{
+    margin-top: 80px;
+    background-color: white;
+    margin-left: 10%;
+    margin-right : 15%;
+  }
+
+  .site-h{
+    font-size: 30px;
+    position: relative;
+    padding-top: 20px;
+  }
+  .site-h::before{
+    content: "";
+    left: 30%;
+    top: 0;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #fd7e14;
+  }
+  </style>
+</head>
+<body class="all">
+  <nav id="menu">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="menu-inner">
+      <ul>
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="signup.html">회원가입</a></li>
+        <li><a href="dietfordisease.html">질병</a></li>
+        <li><a href="workout.html">운동</a></li>
+        <li>-<a href="#"></a></li>
+        <li>-<a href="#"></a></li>
+        <li><a href="dietforhealth.html">식단</a></li>
+        <li>-<a href="#"></a></li>
+        <li>-<a href="#"></a></li>
+      </ul>
+    </div>
+  </nav>
+  <header id="header">
+    <div class="container h_back">
+      <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+      <p style="color:#6FBB66;">health care supporter</p>
+    </div>
+  </header>
+  /<div class="container-fluid d_back">
+    <div id="map1" style="width: 100%; height: 500px;"></div>
+  </div>
+
+<footer id="footer">
+  <div id="jfooter">
+    <p class="footer_address" >
+      충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+      <br>
+      | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+    </p>
+    <p class="footer_copy">
+      Copyright (c) 2021 Ssac Care All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlUIBcBGoHNQ1eSJj1dvJTMybVUDgP6SI&callback=myMap"></script>
+</body>
+</html>

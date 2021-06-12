@@ -1,0 +1,49 @@
+.cal{
+  background-color : white;
+  padding : 0;
+  height : 1000px;
+}
+.cals{
+  margin-top : 100px;
+
+}
+.bmi{
+  background-color : #F2F2F2;
+  padding : 10px;
+}
+.formtext{
+  width : 70px;
+}
+table{
+  margin : 0 auto;
+  text-align : left ;
+}
+.lab{
+  width : 60px;
+}
+
+td{
+  padding-bottom: 10px;
+}
+input{
+  margin-right : 5px;
+}
+caption{
+  caption-side : top;
+}
+h1{
+  margin : 10px;
+}
+.col-sm-6{
+  min-width : 500px;
+  margin : auto auto;
+}
+
+.all{
+  padding-top : 5px;
+  padding-bottom : 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index:-1;
+}

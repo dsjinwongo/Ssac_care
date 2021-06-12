@@ -1,3 +1,11 @@
+var bookmark1_num=0;
+var bookmark2_num=0;
+
+function bookmark1(){
+  if()
+  document.getElementById("bookmark1").src="full_bookmark.png";
+}
+
 function myMap() {
   var map1Canvas = document.getElementById("map1");
   var myCenter1 = new google.maps.LatLng(35.129585756411004, 127.91230650115332);

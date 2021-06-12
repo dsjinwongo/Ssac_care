@@ -1,6 +1,28 @@
 var bookmark1_num=0;
 var bookmark2_num=0;
 
+function bookmark1(){
+  if(bookmark1_num==0){
+  document.getElementById("bookmark1").src="image/full_bookmark.png";
+  bookmark1_num++;
+}
+else{
+  document.getElementById("bookmark1").src="image/empty_bookmark.jpg";
+  bookmark1_num--;
+}
+}
+
+function bookmark2(){
+  if(bookmark2_num==0){
+  document.getElementById("bookmark2").src="image/full_bookmark.png";
+  bookmark2_num++;
+}
+else{
+  document.getElementById("bookmark2").src="image/empty_bookmark.jpg";
+  bookmark2_num--;
+}
+}
+
 function myMap() {
   var map1Canvas = document.getElementById("map1");
   var myCenter1 = new google.maps.LatLng(35.129585756411004, 127.91230650115332);

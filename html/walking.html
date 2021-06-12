@@ -4,7 +4,6 @@
   <title>2019038095_이진원</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../css/diet.css" rel="stylesheet" type="text/css">
   <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -19,10 +18,11 @@
   <!-- jquery component -->
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="../javascript/jquery.js"></script>
-  <script src="../javascript/map1.js"></script>
+  <script src="../javascript/map.js"></script>
   <script type="text/javascript" src="../javascript/script1.js"></script>
   <style>
   .all{
+    position: relative;
     padding-top : 5px;
     padding-bottom : 5px;
   }
@@ -40,41 +40,10 @@
       z-index: -1;
   }
 
-  .filterDiv {
-    text-align: center;
-    margin: 2px;
-    display: none; /* Hidden by default */
-  }
-
-  .show {
-    display: inline-block;
-  }
-
   .container-fluid {
     overflow: hidden;
   }
 
-  .btn:hover {
-  background-color: #ddd;
-  }
-
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-
-  .glyphicon-search{
-    font-size:30px;
-  }
-
-  .thumbnail {
-    margin: 10px;
-  }
-
-  .thumbnail img{
-    width: 250px;
-    height: 300px;
-  }
   #header{
     position: fixed;
     top : 0;
@@ -82,30 +51,23 @@
     z-index: 2;
     width : 100%;
   }
+
   #menu{
     z-index: 3;
     margin-top: -5px;
   }
+
   .d_back{
-    margin-top: 80px;
     background-color: white;
+    margin-top: 85px;
     margin-left: 10%;
     margin-right : 15%;
   }
 
-  .site-h{
-    font-size: 30px;
-    position: relative;
-    padding-top: 20px;
-  }
-  .site-h::before{
-    content: "";
-    left: 30%;
-    top: 0;
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background: #fd7e14;
+  .bg-primary, .bg-danger{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   </style>
 </head>
@@ -131,29 +93,43 @@
       </ul>
     </div>
   </nav>
+
   <header id="header">
     <div class="container h_back">
       <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
       <p style="color:#6FBB66;">health care supporter</p>
     </div>
   </header>
-  /<div class="container-fluid d_back">
-    <div id="map1" style="width: 100%; height: 500px;"></div>
+
+  <div class="d_back container-fluid">
+    <button type="button" onclick="location.href='#map1'" class="btn btn-primary">남파랑길</button>
+    <button type="button" onclick="location.href='#map2'" class="btn btn-danger">해파랑길</button>
+
+    <div class="thumbnail">
+      <h3 class="bg-primary text-white" style="text-align:center;">남파랑길</h3>
+      <div id="map1" style="width: 100%; height: 500px;"></div>
+    </div>
+
+    <div class="thumbnail">
+      <h3 class="bg-danger text-white" style="color:white; background-color: #d9534f; text-align:center;">해파랑길</h3>
+      <div id="map2" style="width: 100%; height: 500px;"></div>
+    </div>
+
   </div>
 
-<footer id="footer">
-  <div id="jfooter">
-    <p class="footer_address" >
-      충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
-      <br>
-      | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
-    </p>
-    <p class="footer_copy">
-      Copyright (c) 2021 Ssac Care All Rights Reserved.
-    </p>
-  </div>
-</footer>
+  <footer id="footer">
+    <div id="jfooter">
+      <p class="footer_address" >
+        충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+        <br>
+        | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+      </p>
+      <p class="footer_copy">
+        Copyright (c) 2021 Ssac Care All Rights Reserved.
+      </p>
+    </div>
+  </footer>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlUIBcBGoHNQ1eSJj1dvJTMybVUDgP6SI&callback=myMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlUIBcBGoHNQ1eSJj1dvJTMybVUDgP6SI&callback=myMap"></script>
 </body>
 </html>

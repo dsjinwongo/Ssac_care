@@ -3,9 +3,7 @@
 
   font-family: 'Do Hyeon', sans-serif;
 }
-.all{
-  position: relative;
-}
+
 
 body, html {
       margin: 0;
@@ -21,6 +19,7 @@ body, html {
           width: 300px;
           transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
           transform: translateX(100%);
+          top: 0;
           right: 60px;
           z-index: 100;
         }
@@ -120,7 +119,6 @@ body, html {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
 }
 
 #header a:hover {
@@ -157,70 +155,60 @@ body section css
   margin-left: 17%;
   margin-right: 17%;
 }
-.carousel-lbt{
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  width: 50px;
-  height: 50px;
-  border: 0px;
-}
-.carousel-rbt{
-  position: absolute;
-  top: 50%;
-  left: 88%;
-  width: 20px;
-  height: 20px;
-  margin-right: 30px;
-  border: 0px;
-}
-.icon{
-  font-size: 50px;
+#myCarousel p {
+  font-size: 20px;
 }
 
 .workout{
-  margin-top: 10%;
-  margin-left: 19%;
   margin-right: 17%;
-  margin-bottom: 10%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 100%;
 }
 
 p.title{
   position: relative;
-  top: 10%;
+  top: 3%;
   font-size: 45px;
   color: black;
   padding-top: 10px;
-  padding-bottom: 10px;
-  font-family: 'title';
+  padding-bottom: 5px;
 }
 
 p.content{
   position: relative;
-  top: 20%;
-  font-size: 25px;
+  top: 7%;
+  font-size: 22px;
   color: #64727B;
-  font-family: 'content';
 }
 .work_bt{
   position: relative;
-  top: 20%;
-  font-family: 'content';
+  top: 17%;
   background-color: transparent;
   border-color: #64727B;
+  font-family: 'Do Hyeon', sans-serif !important;
 }
-.col-lg-5{
+.ctext{
   margin-left: auto;
+  text-align: left;
 }
-.col-lg-5 a:hover{
+.ctext a:hover{
   background-color: #6FBB66;
 }
-@media (max-width: 992px) {
-  p.title{
+@media (max-width: 920px) {
+  #myCarousel p {
+    font-size: 10px;
+  }
+
+  #myCarousel h1 {
+    font-size: 20px;
+  }
+
+  p.title {
     font-size: 25px;
   }
 
-  p.content{
+  p.content {
     font-size: 15px;
   }
 }
@@ -240,10 +228,14 @@ p.content{
 }
 
 /*===footer section css===*/
+#footer{
+  margin-top: 0;
+}
 #jfooter{
   width: 100%;
   background-color: #222222;
   padding-right: 50px;
+  text-align: left;
 }
 
 .footer_address{
@@ -333,7 +325,8 @@ p.content{
   max-width : 700px;
 }
 div.diet {
-  margin-bottom :50px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .diet-title{
   font-size: 20px;

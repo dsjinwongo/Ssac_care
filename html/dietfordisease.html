@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Ssac care - diseasemain</title>
   <meta charset="utf-8">
@@ -21,48 +22,56 @@
   <script src="../javascript/jquery.js"></script>
   <script type="text/javascript" src="../javascript/script1.js"></script>
   <style>
+    .all {
+      background: url('image/disease_back.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-  .all{
-    background: url('image/disease_back.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  .show {
-    display: inline-block;
-  }
+    .show {
+      display: inline-block;
+    }
 
-  .container-fluid {
-    overflow: hidden;
-  }
+    .container-fluid {
+      overflow: hidden;
+    }
 
-  .filterDiv {
-    float: left;
-    text-align: center;
-    margin: 2px;
-    display: none; /* Hidden by default */
-  }
-  .thumbnail img{
-    width: 250px;
-    height: 300px;
-  }
-  .d_back{
-    margin-top: 80px;
-    background-color: white;
-    margin-left: 10%;
-    margin-right : 15%;
-  }
-  #header{
-    position: fixed;
-    top : 0;
-    left : 0;
-    z-index: 2;
-    width : 100%;
-  }
-  #menu{
-    z-index: 3;
-    margin-top: -80px;
-  }
+    .filterDiv {
+      float: left;
+      text-align: center;
+      margin: 2px;
+      display: none;
+      /* Hidden by default */
+    }
 
+    .thumbnail img {
+      width: 250px;
+      height: 300px;
+    }
+
+    .d_back {
+      margin-top: 80px;
+      background-color: white;
+      margin-left: 10%;
+      margin-right: 15%;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+    }
+
+    #menu {
+      z-index: 3;
+      margin-top: -80px;
+    }
+
+    .carousel {
+      width: 80%;
+    }
   </style>
   <script type="text/javascript">
     function create(_link) {
@@ -70,6 +79,7 @@
     }
   </script>
 </head>
+
 <body class="all">
   <div id="menu">
     <div class="hamburger">
@@ -80,17 +90,18 @@
 
     <div class="menu-inner">
       <ul>
-
-        <li><a href="main.html">Ssac care</a></li>
+        <li><a href="main.html" style="color:#6FBB66; text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black; font-size:25px;">Ssac care</a></li>
         <li><a href="login.html">로그인</a></li>
         <li><a href="signup.html">회원가입</a></li>
-        <li><a href="dietfordisease.html">질병</a></li>
+        <hr>
         <li><a href="workout.html">운동</a></li>
+        <hr>
         <li><a href="dietforhealth.html">목적별 식단</a></li>
         <li><a href="dietfordisease.html">질환별 식단</a></li>
+        <hr>
         <li><a href="health_cal.html">BMI & BMR 측정</a></li>
+        <hr>
         <li><a href="campaign.html">Campaign</a></li>
-        <li><a href="walking.html">국토대장정</a></li>
       </ul>
     </div>
   </div>
@@ -131,7 +142,7 @@
     <div class="topnav">
       <input type="text" id="Search" placeholder="질환명을 입력하세요">
       <!-- <input type="submit" onclick="filter()"> -->
-      <button class="btn btn-deault btn-lg text-center" type="button" name="button"onclick="filter()" style="width :50px;"><span class="glyphicon glyphicon-search"></span></button>
+      <button class="btn btn-deault btn-lg text-center" type="button" name="button" onclick="filter()" style="width :50px;"><span class="glyphicon glyphicon-search"></span></button>
 
     </div>
     <br style="clear:both;">
@@ -156,147 +167,147 @@
       <div class="container-fluid text-center">
 
         <div class="row justify-content-center">
-         <a class="col-md-4 text-center "href="disease/IBS.html" >
-           <div class="thumbnail filterDiv intestine">
-             <image src="image/IBS.png">
-             <p><strong class="target" target="_blank">과민성 대장증후군 </strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/IBS.html">
+            <div class="thumbnail filterDiv intestine">
+              <image src="image/IBS.png">
+                <p><strong class="target" target="_blank">과민성 대장증후군 </strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center " href="disease/Colorectal_cancer.html"  >
-           <div class="thumbnail filterDiv intestine cancer">
-             <image src="image/Colorectal_cancer.jpeg">
-             <p><strong class="target" target="_blank">대장직장암</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/Colorectal_cancer.html">
+            <div class="thumbnail filterDiv intestine cancer">
+              <image src="image/Colorectal_cancer.jpeg">
+                <p><strong class="target" target="_blank">대장직장암</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center " href="disease/Constipation.html"  >
-           <div class="thumbnail filterDiv intestine">
-             <image src="image/Constipation.jpeg">
-             <p><strong  class="target" target="_blank">변비</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/Constipation.html">
+            <div class="thumbnail filterDiv intestine">
+              <image src="image/Constipation.jpeg">
+                <p><strong class="target" target="_blank">변비</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center "  href="disease/Thyroid"   >
-           <div class="thumbnail filterDiv etc">
-             <image src="image/Thyroid.jpeg">
-             <p><strong class="target" target="_blank">갑상성 질환</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/Thyroid">
+            <div class="thumbnail filterDiv etc">
+              <image src="image/Thyroid.jpeg">
+                <p><strong class="target" target="_blank">갑상성 질환</strong></p>
+            </div>
+          </a>
 
 
-         <a class="col-md-4 text-center " href="disease/Depression.html"  >
-           <div class="thumbnail filterDiv mental">
-             <image src="image/Depression.jpeg">
-             <p><strong  class="target" target="_blank">우울증</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center " href="disease/Vascular_dementia.html"  >
-           <div class="thumbnail filterDiv brain">
-             <image src="image/Vascular_dementia.jpg">
-             <p><strong class="target" target="_blank">치매</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center " href="disease/Vascular_dementia.html"  >
-           <div class="thumbnail filterDiv brain">
-             <image src="image/Stroke.jpeg">
-             <p><strong  class="target" target="_blank.html">뇌졸증</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center " href="disease/Heart_failure.html"  >
-           <div class="thumbnail filterDiv heart">
-             <image src="image/Heart_failure.jpeg">
-             <p><strong  class="target" target="_blank">심부전</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center "  href="disease/Atopic_dermatitis.html"  >
-           <div class="thumbnail filterDiv skin">
-             <image src="image/Atopic_dermatitis.jpg">
-             <p><strong class="target" target="_blank">아토피 피부염</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center "   href="disease/Leukemia.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/Leukemia.png">
-             <p><strong class="target" target="_blank">백혈병</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center "   href="disease/Stomatitis.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/Stomatitis.jpeg">
-             <p><strong  class="target" target="_blank">구내염</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center "  href="disease/GERD.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/GERD.jpeg">
-             <p><strong  class="target" target="_blank">위-식도역류병</strong></p>
-           </div>
-         </a>
-         <a class="col-md-4 text-center "  href="disease/VitaminE.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/VitaminE.jpeg">
-             <p><strong class="target" target="_blank">비타민E</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/Depression.html">
+            <div class="thumbnail filterDiv mental">
+              <image src="image/Depression.jpeg">
+                <p><strong class="target" target="_blank">우울증</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/Vascular_dementia.html">
+            <div class="thumbnail filterDiv brain">
+              <image src="image/Vascular_dementia.jpg">
+                <p><strong class="target" target="_blank">치매</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/Vascular_dementia.html">
+            <div class="thumbnail filterDiv brain">
+              <image src="image/Stroke.jpeg">
+                <p><strong class="target" target="_blank.html">뇌졸증</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/Heart_failure.html">
+            <div class="thumbnail filterDiv heart">
+              <image src="image/Heart_failure.jpeg">
+                <p><strong class="target" target="_blank">심부전</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/Atopic_dermatitis.html">
+            <div class="thumbnail filterDiv skin">
+              <image src="image/Atopic_dermatitis.jpg">
+                <p><strong class="target" target="_blank">아토피 피부염</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/Leukemia.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/Leukemia.png">
+                <p><strong class="target" target="_blank">백혈병</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/Stomatitis.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/Stomatitis.jpeg">
+                <p><strong class="target" target="_blank">구내염</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/GERD.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/GERD.jpeg">
+                <p><strong class="target" target="_blank">위-식도역류병</strong></p>
+            </div>
+          </a>
+          <a class="col-md-4 text-center " href="disease/VitaminE.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/VitaminE.jpeg">
+                <p><strong class="target" target="_blank">비타민E</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center " href="disease/VitaminC.html"  >
-           <div class="thumbnail filterDiv ">
-             <image width="300" height="400" src="image/VitaminC.jpeg">
-             <p><strong  class="target" target="_blank">비타민C</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/VitaminC.html">
+            <div class="thumbnail filterDiv ">
+              <image width="300" height="400" src="image/VitaminC.jpeg">
+                <p><strong class="target" target="_blank">비타민C</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center " href="disease/VitaminB1.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/VitaminB1.jpeg">
-             <p><strong  class="target" target="_blank">비타민B1</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/VitaminB1.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/VitaminB1.jpeg">
+                <p><strong class="target" target="_blank">비타민B1</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center " href="disease/VitaminB6.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/VitaminB6.jpeg">
-             <p><strong  class="target" target="_blank">비타민B6</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/VitaminB6.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/VitaminB6.jpeg">
+                <p><strong class="target" target="_blank">비타민B6</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center " href="disease/VitaminD.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/VitaminD.jpeg">
-             <p><strong  class="target" target="_blank">비타민D</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/VitaminD.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/VitaminD.jpeg">
+                <p><strong class="target" target="_blank">비타민D</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center "href="disease/HepatitisA.html"   >
-           <div class="thumbnail filterDiv ">
-             <image src="image/HepatitisA.jpeg">
-             <p><strong class="target" target="_blank">A형 간염</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/HepatitisA.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/HepatitisA.jpeg">
+                <p><strong class="target" target="_blank">A형 간염</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center "href="disease/Viral_pneumonia.html"   >
-           <div class="thumbnail filterDiv ">
-             <image src="image/Viral_pneumonia.jpeg">
-             <p><strong class="target" target="_blank">바이러스성 폐렴</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/Viral_pneumonia.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/Viral_pneumonia.jpeg">
+                <p><strong class="target" target="_blank">바이러스성 폐렴</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center " href="disease/Lactose_intolerance.html"   >
-           <div class="thumbnail filterDiv ">
-             <image src="image/Lactose_intolerance.jpeg">
-             <p><strong class="target" target="_blank">유당 불내증</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/Lactose_intolerance.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/Lactose_intolerance.jpeg">
+                <p><strong class="target" target="_blank">유당 불내증</strong></p>
+            </div>
+          </a>
 
-         <a class="col-md-4 text-center "  href="disease/HepatitisC.html"  >
-           <div class="thumbnail filterDiv ">
-             <image src="image/HepatitisC.jpeg">
-             <p><strong class="target" target="_blank">C형 간염</strong></p>
-           </div>
-         </a>
+          <a class="col-md-4 text-center " href="disease/HepatitisC.html">
+            <div class="thumbnail filterDiv ">
+              <image src="image/HepatitisC.jpeg">
+                <p><strong class="target" target="_blank">C형 간염</strong></p>
+            </div>
+          </a>
 
-       </div>
+        </div>
 
 
       </div>
@@ -305,7 +316,7 @@
 
   <footer id="footer">
     <div id="jfooter">
-      <p class="footer_address" >
+      <p class="footer_address">
         충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
         <br>
         | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
@@ -319,4 +330,5 @@
     filterSelection("all")
   </script>
 </body>
+
 </html>

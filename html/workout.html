@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Ssac care - workout</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/workout.css" rel="stylesheet" type="text/css">
-    <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/workout.css" rel="stylesheet" type="text/css">
+  <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- JQuery & javascript component-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
-    <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- JQuery & javascript component-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
 
-    <!-- jquery component -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="../javascript/jquery.js"></script>
-    <script type="text/javascript" src="../javascript/script1.js"></script>
+  <!-- jquery component -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="../javascript/jquery.js"></script>
+  <script type="text/javascript" src="../javascript/script1.js"></script>
 
-    <style media="screen">
-
-    .all{
+  <style media="screen">
+    .all {
       background: url('image/disease_back.png');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -32,24 +32,30 @@
     .filterDiv {
       float: left;
       text-align: center;
-      display: none; /* Hidden by default */
+      display: none;
+      /* Hidden by default */
     }
+
     .container-fluid {
       overflow: hidden;
     }
-    #header{
+
+    #header {
       position: fixed;
-      top : 0;
-      left : 0;
+      top: 0;
+      left: 0;
       z-index: 2;
-      width : 100%;
+      width: 100%;
     }
 
-    #menu{
+    #menu {
       z-index: 3;
       margin-top: -80px;
     }
 
+    .carousel {
+      width: 80%;
+    }
   </style>
   <script type="text/javascript">
     function create(_link) {
@@ -57,6 +63,7 @@
     }
   </script>
 </head>
+
 <body class="all">
   <!-- menu section -->
   <div id="menu">
@@ -68,17 +75,18 @@
 
     <div class="menu-inner">
       <ul>
-
-        <li><a href="main.html">Ssac care</a></li>
+        <li><a href="main.html" style="color:#6FBB66; text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black; font-size:25px;">Ssac care</a></li>
         <li><a href="login.html">로그인</a></li>
         <li><a href="signup.html">회원가입</a></li>
-        <li><a href="dietfordisease.html">질병</a></li>
+        <hr>
         <li><a href="workout.html">운동</a></li>
+        <hr>
         <li><a href="dietforhealth.html">목적별 식단</a></li>
         <li><a href="dietfordisease.html">질환별 식단</a></li>
+        <hr>
         <li><a href="health_cal.html">BMI & BMR 측정</a></li>
+        <hr>
         <li><a href="campaign.html">Campaign</a></li>
-        <li><a href="walking.html">국토대장정</a></li>
       </ul>
     </div>
   </div>
@@ -88,7 +96,7 @@
       <p style="color:#6FBB66;">health care supporter</p>
     </div>
   </header>
-  <div class="gray_mask">  </div>
+  <div class="gray_mask"> </div>
   <div class="back">
 
 
@@ -101,13 +109,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img class="d-block w-100" src="image/dietforhealth_1.jpg" alt="First slide">
+          <img class="d-block w-100" src="image/workout04.jpg" alt="First slide">
         </div>
         <div class="item">
-          <img class="d-block w-100" src="image/dietforhealth_2.jpg" alt="Second slide">
+          <img class="d-block w-100" src="image/workout05.jpg" alt="Second slide">
         </div>
         <div class="item">
-          <img class="d-block w-100" src="image/dietforhealth_3.jpg" alt="Third slide">
+          <img class="d-block w-100" src="image/workout06.jpg" alt="Third slide">
         </div>
       </div>
       <a class="left carousel-control" href="#dietforhealthCarousel" role="button" data-slide="prev">
@@ -136,10 +144,10 @@
     <div class="weight">
       <h1 class="text-center"><strong>운동 목록</strong></h1>
       <div id="popup">
-          <a class="close" href="#">CLOSE</a>
-          <div class="youtube">
-            <iframe id="link"  width="560"height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        <a class="close" href="#">CLOSE</a>
+        <div class="youtube">
+          <iframe id="link" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
 
 
@@ -201,20 +209,20 @@
 
   </div>
 
-      <footer id="footer">
+  <footer id="footer">
 
-        <div id="jfooter">
-          <p class="footer_address" >
-            충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
-            <br>
-            | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
-          </p>
-          <p class="footer_copy">
-            Copyright (c) 2021 Ssac Care All Rights Reserved.
-          </p>
-        </div>
+    <div id="jfooter">
+      <p class="footer_address">
+        충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+        <br>
+        | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+      </p>
+      <p class="footer_copy">
+        Copyright (c) 2021 Ssac Care All Rights Reserved.
+      </p>
+    </div>
 
-      </footer>
+  </footer>
 
   <script>
     filterSelection("all")
@@ -227,7 +235,8 @@
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
       });
-      }
+    }
   </script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>diseasemain</title>
+  <title>Ssac care - diseasemain</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../css/diet.css" rel="stylesheet" type="text/css">
@@ -21,44 +21,12 @@
   <script src="../javascript/jquery.js"></script>
   <script type="text/javascript" src="../javascript/script1.js"></script>
   <style>
-  /* .all::before{
-      content: "";
-      background: url('image/disease_back.png');
-      background-size: cover;
-      opacity: 0.2;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      z-index: -1;
-  } */
 
   .all{
-    padding-top : 5px;
-    padding-bottom : 5px;
+    background: url('image/disease_back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  .all::before{
-      content: "";
-      background: url('image/disease_back.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      z-index: -1;
-  }
-
-  .filterDiv {
-    float: left;
-    text-align: center;
-    margin: 2px;
-    display: none; /* Hidden by default */
-  }
-
   .show {
     display: inline-block;
   }
@@ -67,26 +35,21 @@
     overflow: hidden;
   }
 
-  .btn:hover {
-  background-color: #ddd;
+  .filterDiv {
+    float: left;
+    text-align: center;
+    margin: 2px;
+    display: none; /* Hidden by default */
   }
-
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
-
-  .glyphicon-search{
-    font-size:30px;
-  }
-
-  .thumbnail {
-    margin: 10px;
-  }
-
   .thumbnail img{
     width: 250px;
     height: 300px;
+  }
+  .d_back{
+    margin-top: 80px;
+    background-color: white;
+    margin-left: 10%;
+    margin-right : 15%;
   }
   #header{
     position: fixed;
@@ -97,29 +60,9 @@
   }
   #menu{
     z-index: 3;
-    margin-top: -5px;
-  }
-  .d_back{
-    margin-top: 80px;
-    background-color: white;
-    margin-left: 10%;
-    margin-right : 15%;
+    margin-top: -80px;
   }
 
-  .site-h{
-    font-size: 30px;
-    position: relative;
-    padding-top: 20px;
-  }
-  .site-h::before{
-    content: "";
-    left: 30%;
-    top: 0;
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background: #fd7e14;
-  }
   </style>
   <script type="text/javascript">
     function create(_link) {
@@ -128,7 +71,7 @@
   </script>
 </head>
 <body class="all">
-  <nav id="menu">
+  <div id="menu">
     <div class="hamburger">
       <div class="line"></div>
       <div class="line"></div>
@@ -137,18 +80,20 @@
 
     <div class="menu-inner">
       <ul>
+
+        <li><a href="main.html">Ssac care</a></li>
         <li><a href="login.html">로그인</a></li>
         <li><a href="signup.html">회원가입</a></li>
         <li><a href="dietfordisease.html">질병</a></li>
         <li><a href="workout.html">운동</a></li>
-        <li>-<a href="#"></a></li>
-        <li>-<a href="#"></a></li>
-        <li><a href="dietforhealth.html">식단</a></li>
-        <li>-<a href="#"></a></li>
-        <li>-<a href="#"></a></li>
+        <li><a href="dietforhealth.html">목적별 식단</a></li>
+        <li><a href="dietfordisease.html">질환별 식단</a></li>
+        <li><a href="health_cal.html">BMI & BMR 측정</a></li>
+        <li><a href="campaign.html">Campaign</a></li>
+        <li><a href="walking.html">국토대장정</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
   <header id="header">
     <div class="container h_back">
       <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
@@ -185,13 +130,14 @@
     </div>
     <div class="topnav">
       <input type="text" id="Search" placeholder="질환명을 입력하세요">
-      <input type="submit" onclick="filter()">
-      <span class="glyphicon glyphicon-search"></span>
+      <!-- <input type="submit" onclick="filter()"> -->
+      <button class="btn btn-deault btn-lg text-center" type="button" name="button"onclick="filter()" style="width :50px;"><span class="glyphicon glyphicon-search"></span></button>
+
     </div>
     <br style="clear:both;">
     <br>
     <div class="dropdown">
-      <button class="dropbtn">질환별 식단</button>
+      <button class="dropbtn" style="margin :5px; background-color : grey;">질환별 식단</button>
       <div class="dropdown-content">
         <button class="btn" onclick="filterSelection('all')"> 모두</button>
         <button class="btn" onclick="filterSelection('heart')"> 심장</button>
@@ -205,116 +151,170 @@
     <br>
     <div class="illness">
       <br>
-      <h1 class="site-h">질환별 식단</h1>
+      <h1 class="text-center"><strong>질환별 식단</strong></h1>
       <hr>
       <div class="container-fluid text-center">
-        <div class="thumbnail filterDiv intestine">
-          <image src="image/IBS.png">
-          <p><strong><a href="disease/IBS.html" class="target" target="_blank">과민성 대장증후군</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv intestine cancer">
-          <image src="image/Colorectal_cancer.jpeg">
-          <p><strong><a href="disease/Colorectal_cancer.html" class="target" target="_blank">대장직장암</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv intestine">
-          <image src="image/Constipation.jpeg">
-          <p><strong><a href="disease/Constipation.html" class="target" target="_blank">변비</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv etc">
-          <image src="image/Thyroid.jpeg">
-          <p><strong><a href="disease/Thyroid" class="target" target="_blank">갑상성 질환</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv mental">
-          <image src="image/Depression.jpeg">
-          <p><strong><a href="disease/Depression.html" class="target" target="_blank">우울증</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv brain">
-          <image src="image/Vascular_dementia.jpg">
-          <p><strong><a href="disease/Vascular_dementia.html" class="target" target="_blank">치매</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv brain">
-          <image src="image/Stroke.jpeg">
-          <p><strong><a href="Stroke" class="target" target="_blank.html">뇌졸증</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv heart">
-          <image src="image/Heart_failure.jpeg">
-          <p><strong><a href="disease/Heart_failure.html" class="target" target="_blank">심부전</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv skin">
-          <image src="image/Atopic_dermatitis.jpg">
-          <p><strong><a href="disease/Atopic_dermatitis.html" class="target" target="_blank">아토피 피부염</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/Leukemia.png">
-          <p><strong><a href="disease/Leukemia.html" class="target" target="_blank">백혈병</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/Stomatitis.jpeg">
-          <p><strong><a href="disease/Stomatitis.html" class="target" target="_blank">구내염</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/GERD.jpeg">
-          <p><strong><a href="disease/GERD.html" class="target" target="_blank">위-식도역류병</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/VitaminE.jpeg">
-          <p><strong><a href="disease/VitaminE.html" class="target" target="_blank">비타민E</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image width="300" height="400" src="image/VitaminC.jpeg">
-          <p><strong><a href="disease/VitaminC.html" class="target" target="_blank">비타민C</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/VitaminB1.jpeg">
-          <p><strong><a href="disease/VitaminB1.html" class="target" target="_blank">비타민B1</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/VitaminA.jpeg">
-          <p><strong><a href="disease/VitaminA.html" class="target" target="_blank">비타민A</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/VitaminB6.jpeg">
-          <p><strong><a href="disease/VitaminB6.html" class="target" target="_blank">비타민B6</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/VitaminD.jpeg">
-          <p><strong><a href="disease/VitaminD.html" class="target" target="_blank">비타민D</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/HepatitisA.jpeg">
-          <p><strong><a href="disease/HepatitisA.html" class="target" target="_blank">A형 간염</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/Gout.jpeg">
-          <p><strong><a href="disease/Gout.html" class="target" target="_blank">통풍</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/Viral_pneumonia.jpeg">
-          <p><strong><a href="disease/Viral_pneumonia.html" class="target" target="_blank">바이러스성 폐렴</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/Lactose_intolerance.jpeg">
-          <p><strong><a href="disease/Lactose_intolerance.html" class="target" target="_blank">유당 불내증</a></strong></p>
-        </div>
-        <div class="thumbnail filterDiv ">
-          <image src="image/HepatitisC.jpeg">
-          <p><strong><a href="disease/HepatitisC.html" class="target" target="_blank">C형 간염</a></strong></p>
-        </div>
+
+        <div class="row justify-content-center">
+         <a class="col-md-4 text-center "href="disease/IBS.html" >
+           <div class="thumbnail filterDiv intestine">
+             <image src="image/IBS.png">
+             <p><strong class="target" target="_blank">과민성 대장증후군 </strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center " href="disease/Colorectal_cancer.html"  >
+           <div class="thumbnail filterDiv intestine cancer">
+             <image src="image/Colorectal_cancer.jpeg">
+             <p><strong class="target" target="_blank">대장직장암</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center " href="disease/Constipation.html"  >
+           <div class="thumbnail filterDiv intestine">
+             <image src="image/Constipation.jpeg">
+             <p><strong  class="target" target="_blank">변비</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center "  href="disease/Thyroid"   >
+           <div class="thumbnail filterDiv etc">
+             <image src="image/Thyroid.jpeg">
+             <p><strong class="target" target="_blank">갑상성 질환</strong></p>
+           </div>
+         </a>
+
+
+         <a class="col-md-4 text-center " href="disease/Depression.html"  >
+           <div class="thumbnail filterDiv mental">
+             <image src="image/Depression.jpeg">
+             <p><strong  class="target" target="_blank">우울증</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center " href="disease/Vascular_dementia.html"  >
+           <div class="thumbnail filterDiv brain">
+             <image src="image/Vascular_dementia.jpg">
+             <p><strong class="target" target="_blank">치매</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center " href="disease/Vascular_dementia.html"  >
+           <div class="thumbnail filterDiv brain">
+             <image src="image/Stroke.jpeg">
+             <p><strong  class="target" target="_blank.html">뇌졸증</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center " href="disease/Heart_failure.html"  >
+           <div class="thumbnail filterDiv heart">
+             <image src="image/Heart_failure.jpeg">
+             <p><strong  class="target" target="_blank">심부전</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center "  href="disease/Atopic_dermatitis.html"  >
+           <div class="thumbnail filterDiv skin">
+             <image src="image/Atopic_dermatitis.jpg">
+             <p><strong class="target" target="_blank">아토피 피부염</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center "   href="disease/Leukemia.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/Leukemia.png">
+             <p><strong class="target" target="_blank">백혈병</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center "   href="disease/Stomatitis.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/Stomatitis.jpeg">
+             <p><strong  class="target" target="_blank">구내염</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center "  href="disease/GERD.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/GERD.jpeg">
+             <p><strong  class="target" target="_blank">위-식도역류병</strong></p>
+           </div>
+         </a>
+         <a class="col-md-4 text-center "  href="disease/VitaminE.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/VitaminE.jpeg">
+             <p><strong class="target" target="_blank">비타민E</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center " href="disease/VitaminC.html"  >
+           <div class="thumbnail filterDiv ">
+             <image width="300" height="400" src="image/VitaminC.jpeg">
+             <p><strong  class="target" target="_blank">비타민C</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center " href="disease/VitaminB1.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/VitaminB1.jpeg">
+             <p><strong  class="target" target="_blank">비타민B1</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center " href="disease/VitaminB6.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/VitaminB6.jpeg">
+             <p><strong  class="target" target="_blank">비타민B6</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center " href="disease/VitaminD.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/VitaminD.jpeg">
+             <p><strong  class="target" target="_blank">비타민D</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center "href="disease/HepatitisA.html"   >
+           <div class="thumbnail filterDiv ">
+             <image src="image/HepatitisA.jpeg">
+             <p><strong class="target" target="_blank">A형 간염</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center "href="disease/Viral_pneumonia.html"   >
+           <div class="thumbnail filterDiv ">
+             <image src="image/Viral_pneumonia.jpeg">
+             <p><strong class="target" target="_blank">바이러스성 폐렴</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center " href="disease/Lactose_intolerance.html"   >
+           <div class="thumbnail filterDiv ">
+             <image src="image/Lactose_intolerance.jpeg">
+             <p><strong class="target" target="_blank">유당 불내증</strong></p>
+           </div>
+         </a>
+
+         <a class="col-md-4 text-center "  href="disease/HepatitisC.html"  >
+           <div class="thumbnail filterDiv ">
+             <image src="image/HepatitisC.jpeg">
+             <p><strong class="target" target="_blank">C형 간염</strong></p>
+           </div>
+         </a>
+
+       </div>
+
+
       </div>
-      <footer id="footer">
-        <div id="jfooter">
-          <p class="footer_address" >
-            충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
-            <br>
-            | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
-          </p>
-          <p class="footer_copy">
-            Copyright (c) 2021 Ssac Care All Rights Reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   </div>
+
+  <footer id="footer">
+    <div id="jfooter">
+      <p class="footer_address" >
+        충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+        <br>
+        | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+      </p>
+      <p class="footer_copy">
+        Copyright (c) 2021 Ssac Care All Rights Reserved.
+      </p>
+    </div>
+  </footer>
   <script>
     filterSelection("all")
   </script>

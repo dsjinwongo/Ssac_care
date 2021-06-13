@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Staatliches&display=swap');
+*{
+
+  font-family: 'Do Hyeon', sans-serif;
+}
 .all{
   position: relative;
 }
@@ -144,7 +149,6 @@ home section css
 body section css
 */
 
-/*추가부분-김도염*/
 /*===body section css===*/
 #myCarousel{
   width: auto;
@@ -221,7 +225,6 @@ p.content{
   }
 }
 
-/* 추가부분-김도염*/
 
 #inner{
   align-items: center;
@@ -279,4 +282,78 @@ p.content{
 #menu{
   z-index: 3;
   margin-top:-5px;
+}
+
+
+
+.carousel-indicators{
+  bottom : -30px;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+.carousel-inner .item span{
+  font-style : nnormal;
+}
+.carousel-indicators li{
+  border-color : #f4511e;
+}
+.carousel-inner .item h4{
+  font-size :19px;
+  line-height : 1.375em;
+  font-weight : 400;
+  font-style : italic;
+  margin : 1000px 0;
+}
+.carousel-indicators li.active {
+  background-color : #f4511e;
+}
+.row{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.diet-image img{
+  opacity : 0.8;
+}
+.diet-image:hover img{
+  opacity : 1;
+}
+.btn-primary {
+  color: #212529;
+  background-color: #fd7e14;
+  border-color: #fd7e14;
+}
+.diet-content{
+  color:gray;
+}
+.container{
+  margin : 10px auto;
+  max-width : 700px;
+}
+div.diet {
+  margin-bottom :50px;
+}
+.diet-title{
+  font-size: 20px;
+}
+
+
+ .thumbnail{
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+
+ .thumbnail blockquote {
+   display: block;
+   font-size: 15px;
+ }
+
+ .thumbnail img{
+   width: 100px;
+   height: 100px;
+ }
+.item{
+  margin : auto auto;
 }

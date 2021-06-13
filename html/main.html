@@ -1,516 +1,515 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../css/main.css">
-    <link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
 
-    <!-- bootstrap component -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- JQuery & javascript component-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
-    <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+  <!-- bootstrap component -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- jquery component -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="../javascript/jquery.js"></script>
-    <script src="../javascript/owl.carousel.min.js"></script>
-    <style media="screen">
-    .all{
-      padding-top : 5px;
-      padding-bottom : 5px;
+  <!-- JQuery & javascript component-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+  <script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+
+  <!-- jquery component -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="../javascript/jquery.js"></script>
+  <script src="../javascript/owl.carousel.min.js"></script>
+  <style media="screen">
+    .all {
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
-    .all::before{
-        content: "";
-        background: url('image/disease_back.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        z-index:-1;
+
+    .all::before {
+      content: "";
+      background: url('image/disease_back.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
     }
+
     /* 변경부분  */
-     .carousel-indicators{
-       bottom : -30px;
-     }
-     .carousel-control.right, .carousel-control.left {
-         background-image: none;
-         color: #f4511e;
-       }
-     .carousel-inner .item span{
-       font-style : nnormal;
-     }
-     .carousel-indicators li{
-       border-color : #f4511e;
-     }
-     .carousel-inner .item h4{
-       font-size :19px;
-       line-height : 1.375em;
-       font-weight : 400;
-       font-style : italic;
-       margin : 1000px 0;
-     }
-     .carousel-indicators li.active {
-       background-color : #f4511e;
-     }
-     .site-h{
-       font-size: 30px;
-       position: relative;
-       padding-top: 20px;
-     }
-     .site-h::before{
-       content: "";
-       left: 46%;
-       top: 0;
-       position: absolute;
-       width: 40px;
-       height: 3px;
-       background: #fd7e14;
-     }
-     .row{
-       display: flex;
-       -ms-flex-wrap: wrap;
-       flex-wrap: wrap;
-     }
-     .diet-image .diet-image-body {
-       padding: 30px;
-       border: 1px solid #e6e6e6;
-       border-top: none;
-     }
-     .diet-image{
-       margin : 10px auto;
-     }
-     .diet-image img{
-       opacity : 0.8;
-     }
-     .diet-image:hover img{
-       opacity : 1;
-     }
-     .btn-primary {
-       color: #212529;
-       background-color: #fd7e14;
-       border-color: #fd7e14;
-     }
-     .diet-content{
-       color:gray;
-     }
-     .container{
-       margin : 10px auto;
-       max-width : 700px;
-     }
-     div.diet {
-       margin-bottom :50px;
-     }
-     .diet-title{
-       font-size: 20px;
-     }
+    .carousel-indicators {
+      bottom: -30px;
+    }
 
-     blockquote {
-       color: #A4A4A4;
-       font-style: italic;
-     }
+    .carousel-control.right,
+    .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+    }
 
-     .img-box{
-       float: left;
-       margin-left: 5%;
-       border-radius: 70%;
-       overflow: hidden;
-       width: 100px;
-       height: 100px;
-     }
+    .carousel-inner .item span {
+      font-style: nnormal;
+    }
 
-     .img-box img{
-       display: inline-block;
-       width: 100%;
-       height: 100%;
-       object-fit: cover;
-      }
+    .carousel-indicators li {
+      border-color: #f4511e;
+    }
 
-      .item blockquote{
-        display: inline-block;
-      }
+    .carousel-inner .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 1000px 0;
+    }
 
-      .thumbnail{
-        padding-left: 5px;
-        padding-right: 5px;
-      }
+    .carousel-indicators li.active {
+      background-color: #f4511e;
+    }
 
-      .thumbnail blockquote {
-        display: block;
-        font-size: 15px;
-      }
+    .site-h {
+      font-size: 30px;
+      position: relative;
+      padding-top: 20px;
+    }
 
-      .thumbnail img{
-        width: 100px;
-        height: 100px;
-      }
-    </style>
-  </head>
+    .site-h::before {
+      content: "";
+      left: 46%;
+      top: 0;
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background: #fd7e14;
+    }
 
-  <body  class="all">
-    <!-- menu section -->
-    <div id="menu">
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+    .row {
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
 
-      <div class="menu-inner">
-        <ul>
-          <li><a href="login.html">로그인</a></li>
-          <li><a href="signup.html">회원가입</a></li>
-          <li><a href="dietfordisease.html">질병</a></li>
-          <li><a href="workout.html">운동</a></li>
-          <li>-<a href="#"></a></li>
-          <li>-<a href="#"></a></li>
-          <li><a href="dietforhealth">식단</a></li>
-          <li>-<a href="#"></a></li>
-          <li>-<a href="#"></a></li>
-        </ul>
-      </div>
+    .diet-image .diet-image-body {
+      padding: 30px;
+      border: 1px solid #e6e6e6;
+      border-top: none;
+    }
+
+    .diet-image {
+      margin: 10px auto;
+    }
+
+    .diet-image img {
+      opacity: 0.8;
+    }
+
+    .diet-image:hover img {
+      opacity: 1;
+    }
+
+    .btn-primary {
+      color: #212529;
+      background-color: #fd7e14;
+      border-color: #fd7e14;
+    }
+
+    .diet-content {
+      color: gray;
+    }
+
+    .container {
+      margin: 10px auto;
+      max-width: 700px;
+    }
+
+    div.diet {
+      margin-bottom: 50px;
+    }
+
+    .diet-title {
+      font-size: 20px;
+    }
+
+    blockquote {
+      color: #A4A4A4;
+      font-style: italic;
+    }
+
+    .img-box {
+      float: left;
+      margin-left: 5%;
+      border-radius: 70%;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+    }
+
+    .img-box img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .item blockquote {
+      display: inline-block;
+    }
+
+    .thumbnail {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .thumbnail blockquote {
+      display: block;
+      font-size: 15px;
+    }
+
+    .thumbnail img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body class="all">
+  <!-- menu section -->
+  <div id="menu">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
-    <!-- menu section close-->
 
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="container back">
-        <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
-        <p style="color:#6FBB66;">health care supporter</p>
-      </div>
-    </header>
+    <div class="menu-inner">
+      <ul>
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="signup.html">회원가입</a></li>
+        <li><a href="dietfordisease.html">질병</a></li>
+        <li><a href="workout.html">운동</a></li>
+        <li><a href="dietforhealth.html">식단</a></li>
+        <li><a href="campaign.html">캠페인</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- menu section close-->
 
-    <!-- 추가부분-김도염 -->
-    <div class="m_back">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container back">
+      <h1><a class="h1_css" href="main.html">Ssac Care</a></h1>
+      <p style="color:#6FBB66;">health care supporter</p>
+    </div>
+  </header>
+
+  <!-- 추가부분-김도염 -->
+  <div class="m_back">
     <!-- Home section-->
     <home id="home">
-        <!-- 설명을 carousel방식으로 display -->
-          <div id="myCarousel" class="carousel slide text-center container-fluid" data-ride="carousel">
+      <!-- 설명을 carousel방식으로 display -->
+      <div id="myCarousel" class="carousel slide text-center container-fluid" data-ride="carousel">
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <img id="inner" style="width:auto;height:auto%;" src="image/main02.jpg" alt="main_explain.jpg">
-              </div>
-              <div class="item">
-                <img id="inner" style="width:auto;height:auto;" src="image/workout01.jpg" alt="workout.jpg">
-                <div class="carousel-caption">
-                  <h1>Customized Exercise</h1>
-                  <p>Our Web provide many kinds of workout</p>
-                </div>
-              </div>
-              <div class="item">
-                <img id="inner" style="width:auto; height:auto;" src="image/workout02.jpg" alt="workout.jpg">
-                <div class="carousel-caption">
-                  <h1>Home Training</h1>
-                  <p>Many type of workout instroduction is provided <br>
-                  Enjoy in your home for free</p>
-                </div>
-              </div>
-              <div class="item">
-                <img id="inner" style="width:auto; height:auto;" src="image/diet01.jpg" alt="diet.jpg">
-                <div class="carousel-caption">
-                  <h1>Wonderful Diet</h1>
-                  <p>Not anymore pool diet <br>
-                  colorful diets make you happy</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <button class="carousel-control carousel-lbt" type="button" data-target="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-menu-left icon"></span>
-              <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control carousel-rbt" type="button" data-target="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-menu-right icon"></span>
-              <span class="sr-only">Next</span>
-            </button>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img id="inner" style="width:auto;height:auto%;" src="image/main02.jpg" alt="main_explain.jpg">
           </div>
+          <div class="item">
+            <img id="inner" style="width:auto;height:auto;" src="image/workout01.jpg" alt="workout.jpg">
+            <div class="carousel-caption">
+              <h1>자신만의 운동법 설정</h1>
+              <p>저희 웹사이트는 사용자에게 맞는 다양한 운동법을 제공합니다.</p>
+            </div>
+          </div>
+          <div class="item">
+            <img id="inner" style="width:auto; height:auto;" src="image/workout02.jpg" alt="workout.jpg">
+            <div class="carousel-caption">
+              <h1>집에서 간편하게!</h1>
+              <p>수많은 간편한 운동법들이 소개됩니다!<br>
+                집에서 간단하게 즐겨보는 것은 어떤가요?</p>
+            </div>
+          </div>
+          <div class="item">
+            <img id="inner" style="width:auto; height:auto;" src="image/diet01.jpg" alt="diet.jpg">
+            <div class="carousel-caption">
+              <h1>재미있는 다이어트</h1>
+              <p>더 이상의 지루한 다이어트는 용납하지 못합니다.<br>
+                다양한 식단이 여러분을 더 행복하게 해줄겁니다!</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </home>
     <!-- 추가부분-김도염 -->
     <!-- workout_interface -->
     <div class="workout">
+      <h1 class="site-h text-center"><strong>Workout</strong></h1>
       <div class="row">
         <div class="col-lg-6">
           <img src="image/workout03-1.jpg" style="width: 100%;" alt="">
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-6">
           <p class="title">
-            workout platform
+            운동 방법 페이지
           </p>
           <p class="content">
             저희의 운동법은 신체 부위에 맞게 그리고 사용자의 요구에 맞추어 맞춤형으로 제공됩니다. <br><br>
             기본적으로 가장 간편하고 접근이 편리한 미디어 플랫폼 yuotube에서 운동법을 제공합니다. <br><br>
             youtube에는 수 많은 동영상이 존재하지만 그 중에서 저희가 엄선한 내용을 여러분에게 제공합니다.
           </p>
-          <a href="#" class="btn work_bt">페이지로 이동</a>
+          <a href="workout.html" class="btn work_bt">페이지로 이동</a>
         </div>
 
       </div>
     </div>
 
-    <!-- body_interface -->
-    <jbody id="body">
-      <div id="jbody" class="container-fluid">
-        <img class="wbody img-responsive" src="image/human_05.jpg" alt="body" usemap="#wbody">
-          <map id="wbody" name="wbody">
-            <area shape="rect" alt="복부" title="" coords="146,145,363,251" href="https://www.naver.com" target=" _self" onmousemove="msgposit()" onmouseout="msghide()"onmouseover="textup('복부 운동',0)"/>
-            <area shape="rect" alt="허벅지" title="" coords="197,261,313,323" href="https://www.daum.net" target="_self" onmousemove="msgposit()" onmouseout="msghide()"onmouseover="textup('허벅지 운동',0)"/>
-            <area shape="rect" alt="종아리" title="" coords="182,367,330,494" href="https://www.google.com" target="_self" onmousemove="msgposit()" onmouseout="msghide()"onmouseover="textup('종아리 운동',0)" />
-          </map>
-      </div>
-    </jbody>
+    <!-- 전아현 여기부터 -->
+    <div id="m_diet" class="container-fluid diet">
+      <h1 class="site-h text-center"><strong>Diet</strong></h1>
 
-      <!-- 전아현 여기부터 -->
-            <div id="m_diet" class="container-fluid diet">
-              <h1 class="site-h text-center"><strong>Diet</strong></h1>
-
-              <div id="dietCarousel" class="carousel slide text-center" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#dietCarousel" data-slide-to="0" class=""></li>
-                  <li data-target="#dietCarousel" data-slide-to="1" class=""></li>
-                  <li data-target="#dietCarousel" data-slide-to="2" class="active"></li>
-                </ol>
+      <div id="dietCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#dietCarousel" data-slide-to="0" class=""></li>
+          <li data-target="#dietCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#dietCarousel" data-slide-to="2" class="active"></li>
+        </ol>
 
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item">
-                    <div class="container">
-                      <div class="row">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item">
+            <div class="container">
+              <div class="row">
 
-                        <div class="diet-image col-md-4">
-                          <img src="https://img.youtube.com/vi/GbwpAN_AYM4/mqdefault.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">단백질 식단</h2>
-                            <p class="diet-content">힘들지 않고 살빼기</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                        <div class="diet-image col-md-4">
-                          <img src="https://img.youtube.com/vi/GuPC1qy17DU/mqdefault.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">간혈적 식단</h2>
-                            <p class="diet-content">먹어도 살 빠지는 법</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                        <div class="diet-image col-md-4">
-                          <img src="https://img.youtube.com/vi/ctjwWMOysFI/mqdefault.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">전문적 식단</h2>
-                            <p class="diet-content">의사도 인정한 다이어트 식단</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="container">
-                      <div class="row">
-
-                        <div class="diet-image col-md-4">
-                          <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">Body Combat</h2>
-                            <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                        <div class="diet-image col-md-4">
-                          <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">Body Combat</h2>
-                            <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                        <div class="diet-image col-md-4">
-                          <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">Body Combat</h2>
-                            <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item active">
-                    <div class="container">
-                      <div class="row">
-
-                        <div class="diet-image col-md-4">
-                          <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">Body Combat</h2>
-                            <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                        <div class="diet-image col-md-4">
-                          <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">Body Combat</h2>
-                            <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                        <div class="diet-image col-md-4">
-                          <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                          <div class="diet-image-body">
-                            <h2 class="diet-title">Body Combat</h2>
-                            <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                            <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="diet-image col-md-4">
+                  <img src="https://img.youtube.com/vi/GbwpAN_AYM4/mqdefault.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">단백질 식단</h2>
+                    <p class="diet-content">힘들지 않고 살빼기</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
                   </div>
                 </div>
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#dietCarousel" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#dietCarousel" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                <div class="diet-image col-md-4">
+                  <img src="https://img.youtube.com/vi/GuPC1qy17DU/mqdefault.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">간혈적 식단</h2>
+                    <p class="diet-content">먹어도 살 빠지는 법</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
+                <div class="diet-image col-md-4">
+                  <img src="https://img.youtube.com/vi/ctjwWMOysFI/mqdefault.jpg" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">전문적 식단</h2>
+                    <p class="diet-content">의사도 인정한 다이어트 식단</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
               </div>
             </div>
-      <!-- 전아현 여기까지 test -->
+          </div>
+          <div class="item">
+            <div class="container">
+              <div class="row">
 
-      <!-- 이진원 여기부터 -->
-      <div class="container-fluid text-center">
-        <h1 class="site-h text-center"><strong>Disease</strong></h1>
-        <div class="row">
-          <div class="col-md-4 thumbnail">
-            <img src="image/cancer_icon.png">
-            <h4>Cancer</h4>
-            <blockquote>
-              Risk factors for colorectal cancer include diet, obesity, genetic factors, adenomatous polyps, inflammatory bowel disease, lack of physical activity, smoking and drinking. In the case of colorectal cancer, compared to other cancers, it is closely related to diet, so it is important to manage eating habits that we can control.
-            </blockquote>
-            <a href="">learn more</a>
+                <div class="diet-image col-md-4">
+                  <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">Body Combat</h2>
+                    <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
+                <div class="diet-image col-md-4">
+                  <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">Body Combat</h2>
+                    <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
+                <div class="diet-image col-md-4">
+                  <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">Body Combat</h2>
+                    <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 thumbnail">
-            <img src="image/brain_icon.png">
-            <h4>Brain</h4>
-            <a>learn more</a>
-          </div>
-          <div class="col-md-4 thumbnail">
-            <img src="image/lung_icon.jpeg">
-            <h4>Lung</h4>
-            <a>learn more</a>
+          <div class="item active">
+            <div class="container">
+              <div class="row">
+
+                <div class="diet-image col-md-4">
+                  <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">Body Combat</h2>
+                    <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
+                <div class="diet-image col-md-4">
+                  <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">Body Combat</h2>
+                    <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
+                <div class="diet-image col-md-4">
+                  <img src="image/disease_back.png" alt="Image" class="img-fluid" data-pagespeed-url-hash="1398226334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <div class="diet-image-body">
+                    <h2 class="diet-title">Body Combat</h2>
+                    <p class="diet-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                    <p><a href="#" class="btn btn-primary text-white px-4 diet"><span class="caption">Learn More</span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#dietCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#dietCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <h1 class="site-h text-center"><strong>Board</strong></h1>
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="img-box">
-            <img src="image/human1.png">
-          </div>
-          <h4>Gorani</h4>
-          <blockquote>
-            "I am a happy gorani"
-          </blockquote>
-        </div>
-        <div class="item">
-          <div class="img-box">
-            <img src="image/human2.jpg">
-          </div>
-          <h4>Gorani</h4>
-          <blockquote>
-            "I am a happy gorani"
-          </blockquote>
-        </div>
-        <div class="item">
-          <div class="img-box">
-            <img src="image/human3.jpeg">
-          </div>
-          <h4>Gorani</h4>
-          <blockquote>
-            "I am a happy gorani"
-          </blockquote>
-        </div>
-        <div class="item">
-          <div class="img-box">
-            <img src="image/human4.jpeg">
-          </div>
-          <h4>Gorani</h4>
-          <blockquote>
-            "I am a happy gorani"
-          </blockquote>
-        </div>
-        <div class="item">
-          <div class="img-box">
-            <img src="image/human5.jpeg">
-          </div>
-          <h4>Gorani</h4>
-          <blockquote>
-            "I am a happy gorani"
-          </blockquote>
-        </div>
-      </div>
-      <!-- 이진원 여기까지 -->
-
-      <!-- footer section -->
-      <footer id="footer">
-
-        <div id="jfooter">
-          <p class="footer_address" >
-            충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
-            <br>
-            | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
-          </p>
-          <p class="footer_copy">
-            Copyright (c) 2021 Ssac Care All Rights Reserved.
-          </p>
-        </div>
-
-      </footer>
     </div>
-    <!-- Home section-->
-    <script>
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-    })
-    </script>
+    <!-- 전아현 여기까지 test -->
 
-  </body>
+    <!-- 이진원 여기부터 -->
+    <div class="container-fluid text-center">
+      <h1 class="site-h text-center"><strong>Disease</strong></h1>
+      <div class="row">
+        <div class="col-md-4 thumbnail">
+          <img src="image/cancer_icon.png">
+          <h4>Cancer</h4>
+          <blockquote>
+            Risk factors for colorectal cancer include diet, obesity, genetic factors, adenomatous polyps, inflammatory bowel disease, lack of physical activity, smoking and drinking. In the case of colorectal cancer, compared to other cancers, it is
+            closely related to diet, so it is important to manage eating habits that we can control.
+          </blockquote>
+          <a href="">learn more</a>
+        </div>
+        <div class="col-md-4 thumbnail">
+          <img src="image/brain_icon.png">
+          <h4>Brain</h4>
+          <a>learn more</a>
+        </div>
+        <div class="col-md-4 thumbnail">
+          <img src="image/lung_icon.jpeg">
+          <h4>Lung</h4>
+          <a>learn more</a>
+        </div>
+      </div>
+    </div>
+    <h1 class="site-h text-center"><strong>Board</strong></h1>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="img-box">
+          <img src="image/human1.png">
+        </div>
+        <h4>Gorani</h4>
+        <blockquote>
+          "I am a happy gorani"
+        </blockquote>
+      </div>
+      <div class="item">
+        <div class="img-box">
+          <img src="image/human2.jpg">
+        </div>
+        <h4>Gorani</h4>
+        <blockquote>
+          "I am a happy gorani"
+        </blockquote>
+      </div>
+      <div class="item">
+        <div class="img-box">
+          <img src="image/human3.jpeg">
+        </div>
+        <h4>Gorani</h4>
+        <blockquote>
+          "I am a happy gorani"
+        </blockquote>
+      </div>
+      <div class="item">
+        <div class="img-box">
+          <img src="image/human4.jpeg">
+        </div>
+        <h4>Gorani</h4>
+        <blockquote>
+          "I am a happy gorani"
+        </blockquote>
+      </div>
+      <div class="item">
+        <div class="img-box">
+          <img src="image/human5.jpeg">
+        </div>
+        <h4>Gorani</h4>
+        <blockquote>
+          "I am a happy gorani"
+        </blockquote>
+      </div>
+    </div>
+    <!-- 이진원 여기까지 -->
+
+    <!-- footer section -->
+    <footer id="footer">
+
+      <div id="jfooter">
+        <p class="footer_address">
+          충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+          <br>
+          | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+        </p>
+        <p class="footer_copy">
+          Copyright (c) 2021 Ssac Care All Rights Reserved.
+        </p>
+      </div>
+
+    </footer>
+  </div>
+  <!-- Home section-->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+</body>
+
 </html>

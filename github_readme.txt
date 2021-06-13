@@ -9,3 +9,9 @@
 6. git add *
 7. git commit -m '커밋 메세지'
 8. git push origin (브랜치 명)
+
+
+가져오기
+1. 깃헙에서 master와 merge
+2. git pull origin master
+3. git push

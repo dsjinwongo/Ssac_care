@@ -22,23 +22,11 @@
   <script type="text/javascript" src="../javascript/script1.js"></script>
   <style>
   .all{
-    position: relative;
-    padding-top : 5px;
-    padding-bottom : 5px;
+    background: url('image/disease_back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  .all::before{
-      content: "";
-      background: url('image/disease_back.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      z-index: -1;
-  }
+
 
   .container-fluid {
     overflow: hidden;
@@ -54,7 +42,7 @@
 
   #menu{
     z-index: 3;
-    margin-top: -5px;
+    margin-top:-85px;
   }
 
   .d_back{
@@ -72,7 +60,7 @@
   </style>
 </head>
 <body class="all">
-  <nav id="menu">
+  <div id="menu">
     <div class="hamburger">
       <div class="line"></div>
       <div class="line"></div>
@@ -81,15 +69,25 @@
 
     <div class="menu-inner">
       <ul>
+
+        <li><a href="main.html">Ssac care</a></li>
         <li><a href="login.html">로그인</a></li>
         <li><a href="signup.html">회원가입</a></li>
         <li><a href="dietfordisease.html">질병</a></li>
         <li><a href="workout.html">운동</a></li>
+<<<<<<< HEAD
         <li><a href="dietforhealth">식단</a></li>
         <li><a href="campaign.html">캠페인</a></li>
+=======
+        <li><a href="dietforhealth.html">목적별 식단</a></li>
+        <li><a href="dietfordisease.html">질환별 식단</a></li>
+        <li><a href="health_cal.html">BMI & BMR 측정</a></li>
+        <li><a href="campaign.html">Campaign</a></li>
+        <li><a href="walking.html">국토대장정</a></li>
+>>>>>>> a096d8c5c59dcbcd403130399df030a093f33ac0
       </ul>
     </div>
-  </nav>
+  </div>
 
   <header id="header">
     <div class="container h_back">

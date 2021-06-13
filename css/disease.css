@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Staatliches&display=swap');
+*{
 
+  font-family: 'Do Hyeon', sans-serif;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -12,12 +16,12 @@
   background-color: white;
 }
 .bg-img-cover {
-  margin : auto auto !important;
+  margin : auto auto;
   padding: 2.5rem ;
   max-width : 600px;
 }
 iframe{
-  margin : auto auto !important;
+  margin : auto auto;
   background-color: white;
   padding : 10px;
 }
@@ -28,34 +32,6 @@ iframe{
   height: 500px;
   min-width: 516px;
   border-radius: 0.35rem;
-}
-.site-h{
-  font-size: 30px;
-  position: relative;
-  padding-top: 20px;
-}
-.site-h::before{
-  content: "";
-  left: 46%;
-  top: 0;
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  background: #fd7e14;
-}
-.site-h1{
-  font-size: 20px;
-  position: relative;
-  padding-top: 10px;
-}
-.site-h1::before{
-  content: "";
-  left: 0%;
-  top: 0;
-  position: absolute;
-  width: 40px;
-  height: 1px;
-  background: #fd7e14;
 }
 .contents{
   height:250px;
@@ -86,4 +62,7 @@ button:hover{
 }
 a:hover{
   color:white;
+}
+.r_back{
+  margin-right: 80px;
 }

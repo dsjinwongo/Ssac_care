@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>workout</title>
+  <title>Ssac care - dietforhealth</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../css/diet.css" rel="stylesheet" type="text/css">
+  <link href="../css/workout.css" rel="stylesheet" type="text/css">
   <link href="../css/menu_head.css" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -23,23 +23,32 @@
 
   <style media="screen">
 
-    .all{
-      padding-top : 5px;
-      padding-bottom : 5px;
-    }
-    .all::before{
-        content: "";
-        background: url('image/disease_back.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        z-index: -1;
-    }
+  .all{
+    background: url('image/disease_back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .filterDiv {
+    float: left;
+    text-align: center;
+    display: none; /* Hidden by default */
+  }
+  .container-fluid {
+    overflow: hidden;
+  }
+  #header{
+    position: fixed;
+    top : 0;
+    left : 0;
+    z-index: 2;
+    width : 100%;
+  }
+
+  #menu{
+    z-index: 3;
+    margin-top: -80px;
+  }
 
   </style>
   <script type="text/javascript">
@@ -52,10 +61,9 @@
 
 
 <body class="all">
-
+  <div class="gray_mask"></div>
   <!-- menu section -->
-  <div id="menu" >
-
+  <div id="menu">
     <div class="hamburger">
       <div class="line"></div>
       <div class="line"></div>
@@ -64,12 +72,22 @@
 
     <div class="menu-inner">
       <ul>
+
+        <li><a href="main.html">Ssac care</a></li>
         <li><a href="login.html">로그인</a></li>
         <li><a href="signup.html">회원가입</a></li>
         <li><a href="dietfordisease.html">질병</a></li>
         <li><a href="workout.html">운동</a></li>
+<<<<<<< HEAD
         <li><a href="dietforhealth.html">식단</a></li>
         <li><a href="campaign.html">캠페인</a></li>
+=======
+        <li><a href="dietforhealth.html">목적별 식단</a></li>
+        <li><a href="dietfordisease.html">질환별 식단</a></li>
+        <li><a href="health_cal.html">BMI & BMR 측정</a></li>
+        <li><a href="campaign.html">Campaign</a></li>
+        <li><a href="walking.html">국토대장정</a></li>
+>>>>>>> a096d8c5c59dcbcd403130399df030a093f33ac0
       </ul>
     </div>
   </div>
@@ -108,8 +126,8 @@
       </a>
     </div>
     <br style="clear:both;">
-    <div class="dropdown">
-      <button class="dropbtn">다이어트식단</button>
+    <div class="dropdown" >
+      <button class="dropbtn" style="margin :5px; background-color : grey;">다이어트식단</button>
       <div class="dropdown-content">
         <button class="btn" onclick="filterSelection('all')"> 모두</button>
         <button class="btn" onclick="filterSelection('diet')"> 다이어트</button>
@@ -122,7 +140,7 @@
     <div class="weight">
       <h1 class="site-h text-center"><strong>목적별 식단</strong></h1>
 
-      <div class="gray_mask"></div>
+
 
 
       <div id="popup">
@@ -172,22 +190,22 @@
       </div>
     </div>
 
-    <footer id="footer">
 
-      <div id="jfooter">
-        <p class="footer_address" >
-          충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
-          <br>
-          | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
-        </p>
-        <p class="footer_copy">
-          Copyright (c) 2021 Ssac Care All Rights Reserved.
-        </p>
-      </div>
-
-    </footer>
   </div>
+  <footer id="footer">
 
+    <div id="jfooter">
+      <p class="footer_address" >
+        충청북도 청주시 서원구 충대로 1 (충북대학교) S4-1 | TEL:043-123-4567
+        <br>
+        | E-mail: ssac_care@cbnu.co.kr | 팀원: 전아현(팀장), 김도염, 이진원
+      </p>
+      <p class="footer_copy">
+        Copyright (c) 2021 Ssac Care All Rights Reserved.
+      </p>
+    </div>
+
+  </footer>
   <script>
     filterSelection("all")
   </script>

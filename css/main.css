@@ -152,18 +152,18 @@ body section css
   width: auto;
   height: auto;
   margin-top: 5%;
-  margin-left: 17%;
-  margin-right: 17%;
 }
 #myCarousel p {
   font-size: 20px;
 }
 
 .workout{
-  margin-right: 17%;
   margin-top: 200px;
   margin-bottom: 200px;
   width: 100%;
+  background-color: #E6E6E6;
+  padding : 30px;
+
 }
 
 p.title{

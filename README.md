@@ -2,18 +2,15 @@
 This is project for CBNU Web Class
 
 ## Tech
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white"/></a>
-<img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=Oracle&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jQuery&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat&logo=Selenium&logoColor=white"/>
 
 ## Role
 ✔ Technical Lead
- - Server 설계 및 관리 (Spring, Oracle Database, 
- Apache Tomcat)
- - 요기요 사이트 매장 정보 크롤링(Selenium)
- - 회원가입&로그인&게시판 구현
+ - P.질병 메인, P.세부내용, P.걷기 캠페인 디자인
 
 ✔ Project Lead
  - 개발 프로세스: Github을 통해 형상관리
- - 회의: 매주 목요일 오후 6시 오프라인미xld
+ - 회의: 매주 수요일 오후 8시 오프라인미팅
